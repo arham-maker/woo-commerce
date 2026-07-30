@@ -38,6 +38,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-outfit), system-ui, sans-serif;
+  /* clip avoids X-scroll without breaking position:sticky (unlike overflow-x:hidden on html) */
+  overflow-x: clip;
 }
 
 ::selection {

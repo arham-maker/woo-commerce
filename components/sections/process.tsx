@@ -57,11 +57,11 @@ export function Process({
   steps?: ProcessStep[];
 }) {
   return (
-    <section className="relative bg-white py-14 md:py-16">
+    <section className="relative bg-white py-14 md:py-[55px]">
       <Container>
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24">
+            <div className="lg:sticky lg:top-[55px]">
               <h2 className="max-w-sm text-[32px] font-medium leading-[1.2] tracking-tight text-black md:text-[44px]">
                 {title}
               </h2>
@@ -69,29 +69,32 @@ export function Process({
           </div>
 
           <div className="lg:col-span-8">
-            <ul className="bg-white">
+            <ul className="flex flex-col bg-white">
               {steps.map((step, i) => (
                 <li
                   key={step.num}
                   className={cn(
-                    "sticky top-20 flex flex-col gap-5 bg-white py-7 md:gap-7 md:py-8",
+                    "sticky top-[50px] flex flex-col gap-[30px] bg-white py-[30px]",
+                    "max-[991px]:gap-2.5 max-[991px]:pb-[15px]",
+                    "max-[767px]:items-start max-[767px]:gap-2.5 max-[767px]:pb-2.5",
                     i < steps.length - 1 && "border-b border-[#D4D4D4]",
+                    i === steps.length - 1 && "border-b-0 pb-0",
                   )}
                   style={{ zIndex: i + 1 }}
                 >
-                  <div>
-                    <span className="relative inline-block text-2xl font-normal leading-none text-[#6C6CFF]">
+                  <div className="max-[767px]:w-full">
+                    <span className="relative inline-block text-2xl font-normal leading-[1.16] text-[#6C6CFF] max-[991px]:text-lg max-[991px]:leading-none">
                       {step.num}
                       <span
                         aria-hidden
-                        className="pointer-events-none absolute -top-2 -right-1.5 -z-10 size-6 rounded-full bg-[linear-gradient(180deg,#FFF_0%,#FFC498_100%)]"
+                        className="pointer-events-none absolute -top-2 -right-[5px] -z-10 size-6 rounded-full bg-[linear-gradient(180deg,#FFF_0%,#FFC498_100%)] max-[991px]:-top-1.5 max-[991px]:-right-1 max-[991px]:size-[18px]"
                       />
                     </span>
-                    <h3 className="mt-4 text-xl font-bold leading-tight text-[#333] md:text-2xl">
+                    <h3 className="pt-5 text-2xl font-bold leading-[1.16] text-[#333] max-[991px]:pt-2.5 max-[991px]:text-base max-[991px]:leading-[1.2]">
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-[18px] leading-relaxed text-[#333]">
+                  <p className="text-base leading-[1.6] text-[#333] max-[991px]:text-xs max-[991px]:leading-[1.4]">
                     {step.description}
                   </p>
                 </li>

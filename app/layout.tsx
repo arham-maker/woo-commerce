@@ -50,13 +50,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${outfit.variable} h-full antialiased overflow-x-hidden`}
-    >
-      <body className="min-h-full flex flex-col overflow-x-hidden font-sans">
-        {children}
-      </body>
+    <html lang="en" className={`${outfit.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }

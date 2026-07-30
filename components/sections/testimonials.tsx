@@ -99,7 +99,7 @@ export function Testimonials() {
   ]);
 
   return (
-    <section id="reviews" className="overflow-x-hidden bg-[#F9F9F9] pt-20 pb-16 md:pt-[130px] md:pb-24">
+    <section id="reviews" className="bg-[#F9F9F9] pt-20 pb-16 md:pt-[130px] md:pb-24">
       <Container>
         <FadeIn className="mx-auto max-w-4xl text-center">
           <h2 className="text-[32px] font-medium leading-[1.15] tracking-tight text-[#333] md:text-[44px]">
