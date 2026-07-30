@@ -47,8 +47,8 @@ type FadeInProps = {
 const hiddenTransforms = {
   up: "translate-y-8",
   down: "-translate-y-8",
-  left: "translate-x-10",
-  right: "-translate-x-10",
+  left: "translate-x-4",
+  right: "-translate-x-4",
   none: "",
 };
 

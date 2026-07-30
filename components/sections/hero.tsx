@@ -124,7 +124,7 @@ export function Hero() {
         <div
           className={cn(
             "relative mt-2 transition-transform delay-200 duration-1000 sm:mt-0",
-            ready ? "translate-x-0" : "translate-x-10",
+            ready ? "translate-x-0" : "translate-x-4",
           )}
         >
           <div
@@ -155,7 +155,7 @@ export function Hero() {
                   type="button"
                   onClick={() => emblaApi?.scrollTo(i)}
                   className={cn(
-                    "min-w-0 flex-[0_0_20%] overflow-hidden rounded-md border-2 transition-all sm:rounded-lg",
+                    "min-w-0 flex-1 overflow-hidden rounded-md border-2 transition-all sm:rounded-lg",
                     selected === i
                       ? "border-brand opacity-100"
                       : "border-transparent opacity-70 hover:opacity-100",

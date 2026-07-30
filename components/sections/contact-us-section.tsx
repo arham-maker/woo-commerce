@@ -105,7 +105,7 @@ function ContactField({
 }) {
   return (
     <div className="pb-[50px] max-[1399px]:pb-5">
-      <label className="mb-0 flex gap-1.5 pb-2.5 text-2xl font-semibold leading-[1.45] text-black max-[1399px]:gap-1.5 max-[1399px]:pb-1.5 max-[1399px]:text-base max-[1399px]:leading-[1.2]">
+      <label className="mb-0 flex gap-1.5 pb-2.5 text-2xl font-semibold leading-[1.45] text-black max-[1399px]:gap-1.5 max-[1399px]:pb-[5px] max-[1399px]:text-base max-[1399px]:leading-[1.2]">
         {label}
         {required ? <span className="text-[#f96363]">*</span> : null}
       </label>
@@ -197,7 +197,7 @@ export function ContactUsSection() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex w-[256px] items-center justify-center rounded-[41px] bg-[#ff6c6c] px-[51px] pt-5 pb-4 text-2xl font-bold whitespace-nowrap text-white transition-colors duration-[400ms] ease-in-out hover:bg-[#6c6cff] max-[1399px]:w-[200px] max-[1399px]:justify-center max-[1399px]:px-5 max-[1399px]:py-3 max-[1399px]:text-lg"
+                  className="inline-flex w-[256px] items-center justify-center rounded-[41px] bg-[#ff6c6c] px-[51px] pt-5 pb-4 text-2xl font-bold whitespace-nowrap text-white transition-colors duration-[400ms] ease-in-out hover:bg-[#6c6cff] max-[1399px]:w-[200px] max-[1399px]:justify-center max-[1399px]:px-5 max-[1399px]:pt-3 max-[1399px]:pb-2.5 max-[1399px]:text-lg"
                 >
                   Started Now
                 </button>

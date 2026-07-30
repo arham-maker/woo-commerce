@@ -8,15 +8,15 @@ import { Container } from "@/components/layout/container";
 import { cn } from "@/lib/utils";
 
 const fieldClass =
-  "w-full border-0 border-b border-[#333] bg-transparent pb-[30px] text-xl font-normal leading-[1.2] text-[#333] outline-none placeholder:text-[#333]/placeholder:opacity-100 focus:border-brand";
+  "w-full border-0 border-b border-[#333] bg-transparent pb-[30px] text-xl font-normal leading-[1.2] text-[#333] outline-none placeholder:text-[#333] placeholder:opacity-100 focus:border-brand max-[1399px]:pb-3 max-[1399px]:text-base max-[991px]:pb-[7px] max-[991px]:text-xs";
 
 export function ContactCta() {
   return (
-    <section id="contact" className="bg-white pb-16 md:pb-[90px]">
+    <section id="contact" className="bg-white pb-[90px] max-[991px]:py-10">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <FadeIn direction="left">
-            <h2 className="mb-[38px] text-[32px] font-medium leading-[1.25] tracking-tight text-[#333] md:text-[40px]">
+            <h2 className="mb-[38px] text-[40px] font-medium leading-[1.25] tracking-tight text-[#333] max-[1399px]:text-[36px] max-[991px]:mb-5 max-[991px]:pb-0 max-[991px]:text-2xl max-[767px]:text-[22px]">
               Need a technological solution? <br className="hidden sm:block" />
               Contact us!
             </h2>
@@ -25,7 +25,7 @@ export function ContactCta() {
               className="w-full"
               onSubmit={(e) => e.preventDefault()}
             >
-              <div className="grid gap-x-6 gap-y-10 sm:grid-cols-2 md:gap-y-12">
+              <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 max-[1399px]:gap-y-[30px] max-[991px]:gap-y-3">
                 <div>
                   <input
                     required
@@ -72,8 +72,8 @@ export function ContactCta() {
                 </div>
               </div>
 
-              <div className="mt-[37px] flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-                <p className="max-w-xl text-xs leading-[1.6] text-[#999]">
+              <div className="mt-[37px] flex flex-col items-start gap-5 sm:flex-row sm:items-center max-[991px]:mt-5 max-[991px]:flex-col max-[991px]:items-end max-[991px]:gap-2.5">
+                <p className="max-w-xl text-xs leading-[1.6] text-[#999] max-[991px]:w-full">
                   Please be informed that when you click the Send button
                   Innowise will process your personal data in accordance with
                   our{" "}
@@ -88,10 +88,11 @@ export function ContactCta() {
                     "border border-brand bg-brand px-5 py-5 text-lg font-bold text-white",
                     "transition-colors duration-[400ms] ease-in-out",
                     "hover:bg-transparent hover:text-black",
+                    "max-[991px]:w-[100px] max-[991px]:gap-2.5 max-[991px]:rounded-[40px] max-[991px]:px-[5px] max-[991px]:pt-2.5 max-[991px]:pb-2 max-[991px]:text-sm",
                   )}
                 >
                   Send
-                  <ArrowRight className="size-[18px] transition-colors duration-[400ms]" strokeWidth={2.5} />
+                  <ArrowRight className="size-[18px] transition-colors duration-[400ms] max-[991px]:size-3.5" strokeWidth={2.5} />
                 </button>
               </div>
             </form>
