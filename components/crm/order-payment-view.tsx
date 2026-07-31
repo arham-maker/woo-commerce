@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { MessageCircle } from "lucide-react";
 import { ASSETS } from "@/lib/constants";
 import {
@@ -10,7 +11,7 @@ import {
   loadOrderPackage,
   type OrderPackage,
 } from "@/lib/order-package";
-import { SecurePaymentModal } from "@/components/crm/secure-payment-modal";
+// import { SecurePaymentModal } from "@/components/crm/secure-payment-modal";
 import { cn } from "@/lib/utils";
 
 const STEPS = [
@@ -21,8 +22,9 @@ const STEPS = [
 ] as const;
 
 export function OrderPaymentView() {
+  const router = useRouter();
   const [pkg, setPkg] = useState<OrderPackage>(DEFAULT_ORDER_PACKAGE);
-  const [paymentOpen, setPaymentOpen] = useState(false);
+  // const [paymentOpen, setPaymentOpen] = useState(false);
 
   useEffect(() => {
     setPkg(loadOrderPackage());
@@ -124,12 +126,22 @@ export function OrderPaymentView() {
                 </p>
               </div>
 
+              {/* Payment button (temporarily disabled)
               <button
                 type="button"
                 onClick={() => setPaymentOpen(true)}
                 className="mt-6 rounded-full bg-[#635bff] px-10 py-3.5 text-base font-semibold tracking-wide text-white transition-colors hover:bg-[#3f4b66] sm:mt-8 sm:px-12 sm:py-4 sm:text-lg"
               >
                 Pay Your Amount
+              </button>
+              */}
+
+              <button
+                type="button"
+                onClick={() => router.back()}
+                className="mt-6 rounded-full bg-[#635bff] px-10 py-3.5 text-base font-semibold tracking-wide text-white transition-colors hover:bg-[#3f4b66] sm:mt-8 sm:px-12 sm:py-4 sm:text-lg"
+              >
+                Back
               </button>
             </div>
 
@@ -153,11 +165,13 @@ export function OrderPaymentView() {
         </section>
       </main>
 
+      {/* Payment form modal (temporarily disabled)
       <SecurePaymentModal
         open={paymentOpen}
         onOpenChange={setPaymentOpen}
         amount={pkg.price}
       />
+      */}
     </div>
   );
 }

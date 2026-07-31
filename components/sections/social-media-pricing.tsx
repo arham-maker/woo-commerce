@@ -1,49 +1,10 @@
 "use client";
 
-import { Check, Phone } from "lucide-react";
-import { SITE } from "@/lib/constants";
+import { Check } from "lucide-react";
 import { FadeIn, Stagger, StaggerItem } from "@/components/motion/fade-in";
 import { Container } from "@/components/layout/container";
-import { Button } from "@/components/ui/button";
-import { GetStartedDialog } from "@/components/get-started-dialog";
-
-const packages = [
-  {
-    name: "Starter",
-    tagline: "Limited visibility, slow follower growth.",
-    price: 1000,
-    features: [
-      "8 posts/month (1 platform)",
-      "Basic graphics + captions",
-      "Scheduling and posting",
-      "Google Business Profile optimization",
-    ],
-  },
-  {
-    name: "Growth",
-    tagline:
-      "More engagement, multi-channel presence, stronger brand consistency.",
-    price: 2000,
-    features: [
-      "12–16 posts/month (2 platforms)",
-      "Reels + carousel content",
-      "Community management (comments & inbox)",
-      "$100–$200 in boosted posts",
-    ],
-  },
-  {
-    name: "Dominator",
-    tagline:
-      "Full domination across platforms, rapid reach, and sales-focused campaigns.",
-    price: 3000,
-    features: [
-      "20+ posts/month (3+ platforms)",
-      "Reels, carousels, stories, influencer collabs",
-      "Full community management",
-      "Paid campaigns setup + monthly reporting",
-    ],
-  },
-];
+import { PackageCardActions } from "@/components/sections/package-card-actions";
+import { socialMediaPackages } from "@/lib/packages";
 
 export function SocialMediaPricing() {
   return (
@@ -58,8 +19,8 @@ export function SocialMediaPricing() {
         </FadeIn>
 
         <Stagger className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {packages.map((pkg, i) => (
-            <StaggerItem key={pkg.name} index={i}>
+          {socialMediaPackages.map((pkg, i) => (
+            <StaggerItem key={pkg.slug} index={i}>
               <article className="flex h-full flex-col gap-[25px] rounded-[30px] bg-white p-[30px] transition-shadow duration-300 hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.1)]">
                 <div>
                   <h3 className="pb-2.5 text-[26px] font-semibold leading-[1.2] tracking-tight text-[#2A3342] md:text-[30px]">
@@ -75,7 +36,7 @@ export function SocialMediaPricing() {
                     ${pkg.price}
                   </span>
                   <span className="flex items-center justify-center rounded-[15px] bg-[#ECECEC] px-2.5 py-2 text-center text-xs font-normal leading-[1.4] text-black md:text-[12px]">
-                    /month
+                    {pkg.priceSuffix ?? "/month"}
                   </span>
                 </div>
 
@@ -96,18 +57,15 @@ export function SocialMediaPricing() {
                   </ul>
                 </div>
 
-                <div className="mt-auto flex w-full flex-col items-center gap-[15px]">
-                  <GetStartedDialog
-                    triggerLabel="Get Started Now"
-                    triggerClassName="w-full"
-                  />
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href={SITE.phoneHref}>
-                      <Phone className="size-4" />
-                      {SITE.phone}
-                    </a>
-                  </Button>
-                </div>
+                <PackageCardActions
+                  slug={pkg.slug}
+                  orderPackage={{
+                    name: pkg.name,
+                    category: pkg.category,
+                    price: pkg.price,
+                    features: [...pkg.features],
+                  }}
+                />
               </article>
             </StaggerItem>
           ))}

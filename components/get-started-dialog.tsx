@@ -25,6 +25,10 @@ import {
   type OrderPackage,
 } from "@/lib/order-package";
 import { cn } from "@/lib/utils";
+import {
+  formDataToObject,
+  submitContactForm,
+} from "@/lib/submit-contact";
 
 type GetStartedDialogProps = {
   triggerClassName?: string;
@@ -44,6 +48,8 @@ export function GetStartedDialog({
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [countryAbbr, setCountryAbbr] = useState(DEFAULT_COUNTRY_ABBR);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const selectedCountry = useMemo(
     () =>
@@ -146,8 +152,27 @@ export function GetStartedDialog({
                   "max-[1399px]:px-[25px] max-[1399px]:py-[30px]",
                   "max-[767px]:p-[15px]",
                 )}
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
+                  setError(null);
+                  setSubmitting(true);
+                  const fields = formDataToObject(e.currentTarget);
+                  const phone = [fields.countrycode, fields.phone]
+                    .filter(Boolean)
+                    .join(" ");
+                  const result = await submitContactForm({
+                    type: "get-started",
+                    name: fields.name,
+                    email: fields.email,
+                    phone,
+                    countryCode: fields.countrycode,
+                    details: fields.details,
+                  });
+                  setSubmitting(false);
+                  if (!result.ok) {
+                    setError(result.error);
+                    return;
+                  }
                   saveOrderPackage({
                     ...DEFAULT_ORDER_PACKAGE,
                     ...orderPackage,
@@ -198,14 +223,21 @@ export function GetStartedDialog({
                 </div>
 
                 <div>
+                  {error ? (
+                    <p className="mb-3 text-sm text-red-600" role="alert">
+                      {error}
+                    </p>
+                  ) : null}
                   <button
                     type="submit"
+                    disabled={submitting}
                     className={cn(
                       "inline-block w-full rounded-[6px] bg-[rgb(10,211,10)] p-5 text-center text-[22px] font-bold leading-none text-white",
+                      "disabled:cursor-not-allowed disabled:opacity-60",
                       "max-[767px]:p-[15px] max-[767px]:text-base max-[767px]:leading-none",
                     )}
                   >
-                    Get Started Now!
+                    {submitting ? "Sending..." : "Get Started Now!"}
                   </button>
                 </div>
               </form>

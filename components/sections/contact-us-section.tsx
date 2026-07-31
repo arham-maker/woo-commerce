@@ -2,11 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import { ASSETS } from "@/lib/constants";
 import { Container } from "@/components/layout/container";
 import { cn } from "@/lib/utils";
+import {
+  formDataToObject,
+  submitContactForm,
+} from "@/lib/submit-contact";
 
 const CONTACT_EMAIL = "info@woocommerceweb.com";
 
@@ -116,6 +120,8 @@ function ContactField({
 
 export function ContactUsSection() {
   const router = useRouter();
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   return (
     <section className="relative -mt-[140px] pb-[130px] max-[1199px]:pb-10">
@@ -133,8 +139,23 @@ export function ContactUsSection() {
             </div>
 
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
+                setError(null);
+                setSubmitting(true);
+                const fields = formDataToObject(e.currentTarget);
+                const result = await submitContactForm({
+                  type: "contact-us",
+                  email: fields.email,
+                  details: fields.details,
+                  requestType: fields.requestType,
+                  tellUsMore: fields.tellUsMore,
+                });
+                setSubmitting(false);
+                if (!result.ok) {
+                  setError(result.error);
+                  return;
+                }
                 router.push("/thank-you");
               }}
               noValidate
@@ -195,11 +216,17 @@ export function ContactUsSection() {
               </ContactField>
 
               <div>
+                {error ? (
+                  <p className="mb-3 text-sm text-red-600" role="alert">
+                    {error}
+                  </p>
+                ) : null}
                 <button
                   type="submit"
-                  className="inline-flex w-[256px] items-center justify-center rounded-[41px] bg-[#ff6c6c] px-[51px] pt-5 pb-4 text-2xl font-bold whitespace-nowrap text-white transition-colors duration-[400ms] ease-in-out hover:bg-[#6c6cff] max-[1399px]:w-[200px] max-[1399px]:justify-center max-[1399px]:px-5 max-[1399px]:pt-3 max-[1399px]:pb-2.5 max-[1399px]:text-lg"
+                  disabled={submitting}
+                  className="inline-flex w-[256px] items-center justify-center rounded-[41px] bg-[#ff6c6c] px-[51px] pt-5 pb-4 text-2xl font-bold whitespace-nowrap text-white transition-colors duration-[400ms] ease-in-out hover:bg-[#6c6cff] disabled:cursor-not-allowed disabled:opacity-60 max-[1399px]:w-[200px] max-[1399px]:justify-center max-[1399px]:px-5 max-[1399px]:pt-3 max-[1399px]:pb-2.5 max-[1399px]:text-lg"
                 >
-                  Started Now
+                  {submitting ? "Sending..." : "Started Now"}
                 </button>
               </div>
             </form>

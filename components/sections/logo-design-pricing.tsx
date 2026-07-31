@@ -1,69 +1,10 @@
 "use client";
 
-import { Check, Phone } from "lucide-react";
-import { SITE } from "@/lib/constants";
+import { Check } from "lucide-react";
 import { FadeIn, Stagger, StaggerItem } from "@/components/motion/fade-in";
 import { Container } from "@/components/layout/container";
-import { Button } from "@/components/ui/button";
-import { GetStartedDialog } from "@/components/get-started-dialog";
-
-const packages = [
-  {
-    name: "Best Seller",
-    tagline: "Ideal solution for beginners",
-    price: 149,
-    original: 298,
-    features: [
-      "4 Logo Design Concepts",
-      "5 Revision Cycle",
-      "1 Dedicated Designer",
-      "24/7 Chat Support",
-      "Free Color Options",
-      "Free Fav Icon",
-      "Print Friendly Design (PNG, JPG)",
-      "100% Ownership Rights",
-      "100% Money Back Guarantee",
-    ],
-  },
-  {
-    name: "The Ultimate",
-    tagline: "Startup-friendly design package",
-    price: 249,
-    original: 498,
-    features: [
-      "6 Logo Design Concepts",
-      "Unlimited Revisions",
-      "2 Dedicated Designers",
-      "Free Color Options",
-      "Free Grayscale Format",
-      "Free Icon",
-      "24 To 48 Hours TAT",
-      "All File Formats (Ai, PSD, EPS, PNG, JPG, PDF)",
-      "100% Ownership Rights",
-      "100% Money Back Guarantee",
-    ],
-  },
-  {
-    name: "Business Plus",
-    tagline: "Optimal for small and medium businesses",
-    price: 349,
-    original: 698,
-    features: [
-      "8 Logo Design Concepts",
-      "Unlimited Revisions",
-      "3 Dedicated Designers",
-      "Free Stationery Design (Business Card, Letterhead, Envelope)",
-      "Free Icon",
-      "Free Color Options",
-      "Free Grayscale Format",
-      "24 To 48 Hours TAT",
-      "$50 Off On Website Order",
-      "All File Formats (Ai, PSD, EPS, PNG, JPG, PDF)",
-      "100% Ownership Rights",
-      "100% Money Back Guarantee",
-    ],
-  },
-];
+import { PackageCardActions } from "@/components/sections/package-card-actions";
+import { logoDesignPackages } from "@/lib/packages";
 
 export function LogoDesignPricing() {
   return (
@@ -76,8 +17,8 @@ export function LogoDesignPricing() {
         </FadeIn>
 
         <Stagger className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {packages.map((pkg, i) => (
-            <StaggerItem key={pkg.name} index={i}>
+          {logoDesignPackages.map((pkg, i) => (
+            <StaggerItem key={pkg.slug} index={i}>
               <article className="flex h-full flex-col gap-[25px] rounded-[30px] bg-white p-[30px] transition-shadow duration-300 hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.1)]">
                 <div>
                   <h3 className="pb-2.5 text-[26px] font-semibold leading-[1.2] tracking-tight text-[#2A3342] md:text-[30px]">
@@ -92,10 +33,12 @@ export function LogoDesignPricing() {
                   <span className="text-[48px] font-semibold leading-[1.2] tracking-tight text-brand md:text-[55px]">
                     ${pkg.price}
                   </span>
-                  <span className="flex flex-wrap items-center justify-center gap-1 rounded-[15px] bg-[#ECECEC] px-2.5 py-2 text-center text-xs font-normal leading-[1.4] text-black md:text-[12px]">
-                    <span className="line-through">${pkg.original}</span>
-                    <span>Save 50% off!</span>
-                  </span>
+                  {pkg.original != null && (
+                    <span className="flex flex-wrap items-center justify-center gap-1 rounded-[15px] bg-[#ECECEC] px-2.5 py-2 text-center text-xs font-normal leading-[1.4] text-black md:text-[12px]">
+                      <span className="line-through">${pkg.original}</span>
+                      <span>Save 50% off!</span>
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex w-full flex-col gap-5">
@@ -115,18 +58,15 @@ export function LogoDesignPricing() {
                   </ul>
                 </div>
 
-                <div className="mt-auto flex w-full flex-col items-center gap-[15px]">
-                  <GetStartedDialog
-                    triggerLabel="Get Started Now"
-                    triggerClassName="w-full"
-                  />
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href={SITE.phoneHref}>
-                      <Phone className="size-4" />
-                      {SITE.phone}
-                    </a>
-                  </Button>
-                </div>
+                <PackageCardActions
+                  slug={pkg.slug}
+                  orderPackage={{
+                    name: pkg.name,
+                    category: pkg.category,
+                    price: pkg.price,
+                    features: [...pkg.features],
+                  }}
+                />
               </article>
             </StaggerItem>
           ))}

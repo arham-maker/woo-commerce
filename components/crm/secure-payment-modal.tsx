@@ -1,5 +1,7 @@
 "use client";
 
+// Payment form temporarily disabled — uncomment below to restore
+/*
 import { X } from "lucide-react";
 import {
   Dialog,
@@ -11,6 +13,7 @@ import { cn } from "@/lib/utils";
 
 const inputClass =
   "w-full rounded-md border border-[#d8d8d8] bg-white px-3 py-2.5 text-sm text-[#333] outline-none placeholder:text-[#9a9a9a] focus:border-[#aaa]";
+*/
 
 type SecurePaymentModalProps = {
   open: boolean;
@@ -18,11 +21,12 @@ type SecurePaymentModalProps = {
   amount: number;
 };
 
-export function SecurePaymentModal({
-  open,
-  onOpenChange,
-  amount,
-}: SecurePaymentModalProps) {
+export function SecurePaymentModal(_props: SecurePaymentModalProps) {
+  return null;
+
+  /* Payment form (temporarily commented out)
+  const { open, onOpenChange, amount } = _props;
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
@@ -41,22 +45,6 @@ export function SecurePaymentModal({
 
           <div className="rounded-[16px] bg-white px-4 py-5 sm:px-6 sm:py-6">
             <DialogTitle className="sr-only">Secure payment</DialogTitle>
-
-            <button
-              type="button"
-              className="flex h-12 w-full items-center justify-center rounded-full bg-[#ffc439] transition-opacity hover:opacity-90"
-              onClick={(e) => e.preventDefault()}
-            >
-              <PayPalLogo />
-            </button>
-
-            <div className="my-4 flex items-center gap-3">
-              <span className="h-px flex-1 bg-[#d8d8d8]" />
-              <span className="text-xs font-semibold tracking-wide text-[#888]">
-                OR
-              </span>
-              <span className="h-px flex-1 bg-[#d8d8d8]" />
-            </div>
 
             <form
               className="space-y-3"
@@ -153,36 +141,5 @@ export function SecurePaymentModal({
       </DialogContent>
     </Dialog>
   );
-}
-
-function PayPalLogo() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 32"
-      className="h-6 w-auto"
-      aria-label="PayPal"
-    >
-      <text
-        x="4"
-        y="23"
-        fontFamily="Helvetica, Arial, sans-serif"
-        fontWeight="700"
-        fontSize="22"
-        fill="#003087"
-      >
-        Pay
-      </text>
-      <text
-        x="48"
-        y="23"
-        fontFamily="Helvetica, Arial, sans-serif"
-        fontWeight="700"
-        fontSize="22"
-        fill="#009cde"
-      >
-        Pal
-      </text>
-    </svg>
-  );
+  */
 }

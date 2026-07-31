@@ -101,6 +101,7 @@ export default function Lp1Page() {
         />
         <Process />
         <Pricing
+          showViewDetails={false}
           title={
             <>
               Comprehensive Pricing and Package
