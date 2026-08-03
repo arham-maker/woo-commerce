@@ -19,7 +19,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Beautiful Websites In Minutes… | Woo Commerce Launchpad",
+  title: "Beautiful Websites In Minutes… | WooCommerce Web",
   description:
     "Built from the ground up for lightning-fast performance, yet filled with modern features that will make building websites fun again.",
 };

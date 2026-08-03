@@ -17,7 +17,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Functionality with Tailored Plugins | Woo Commerce Launchpad",
+  title: "Functionality with Tailored Plugins | WooCommerce Web",
   description:
     "WooCommerce Web excels in developing robust, feature-rich plugins that boost functionality, optimize performance, and enrich the user journey.",
 };

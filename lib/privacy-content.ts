@@ -8,7 +8,7 @@ export type LegalSection = {
 };
 
 export const PRIVACY_INTRO =
-  "At Woo Commerce Launchpad, we prioritize the respect and transparency of user data. Our Privacy Policy is built upon these principles and includes measures to ensure compliance with the requirements outlined by the General Data Protection Regulation (GDPR).";
+  "At WooCommerce Web, we prioritize the respect and transparency of user data. Our Privacy Policy is built upon these principles and includes measures to ensure compliance with the requirements outlined by the General Data Protection Regulation (GDPR).";
 
 export const PRIVACY_SECTIONS: LegalSection[] = [
   {
@@ -16,7 +16,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        html: "We highly value your personal data at Woo Commerce Launchpad. Our Privacy Policy is designed to provide clear and transparent information about the data we collect when you visit woocommercelaunchpad.com or communicate with us through various channels such as email, phone, or messengers. Our Privacy Policy outlines how you can control the information we collect, how we use this data, and how to contact us regarding your privacy concerns. Furthermore, it details the measures we implement to safeguard your data in compliance with the regulations stipulated by the General Data Protection Regulation (GDPR).",
+        html: "We highly value your personal data at WooCommerce Web. Our Privacy Policy is designed to provide clear and transparent information about the data we collect when you visit woocommerceweb.com or communicate with us through various channels such as email, phone, or messengers. Our Privacy Policy outlines how you can control the information we collect, how we use this data, and how to contact us regarding your privacy concerns. Furthermore, it details the measures we implement to safeguard your data in compliance with the regulations stipulated by the General Data Protection Regulation (GDPR).",
       },
     ],
   },
@@ -25,15 +25,15 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        html: "At Woo Commerce Launchpad, we collect the information you explicitly and voluntarily provide through our contact forms and pages. We do not gather information without your conscious decision to provide it.",
+        html: "At WooCommerce Web, we collect the information you explicitly and voluntarily provide through our contact forms and pages. We do not gather information without your conscious decision to provide it.",
       },
       {
         type: "p",
-        html: "The information you may provide includes your name, email address, and phone number, primarily about projects, services, and billing. Additionally, information may be collected during phone or email conversations with our official representatives at Woo Commerce Launchpad.",
+        html: "The information you may provide includes your name, email address, and phone number, primarily about projects, services, and billing. Additionally, information may be collected during phone or email conversations with our official representatives at WooCommerce Web.",
       },
       {
         type: "p",
-        html: "Furthermore, Woo Commerce Launchpad may gather information concerning third parties directly relevant to you, your project, or your requested services.",
+        html: "Furthermore, WooCommerce Web may gather information concerning third parties directly relevant to you, your project, or your requested services.",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        html: "At Woo Commerce Launchpad, the information we collect is utilized to deliver digital services tailored to your needs. Some ways we may use your information include:",
+        html: "At WooCommerce Web, the information we collect is utilized to deliver digital services tailored to your needs. Some ways we may use your information include:",
       },
       {
         type: "p",
@@ -66,7 +66,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
       },
       {
         type: "p",
-        html: "It's important to note that Woo Commerce Launchpad does not share information with external parties unless it is essential to fulfill the services you have requested. However, Woo Commerce Launchpad reserves the right to disclose relevant information following official judicial practices, such as complying with a valid subpoena or court order.",
+        html: "It's important to note that WooCommerce Web does not share information with external parties unless it is essential to fulfill the services you have requested. However, WooCommerce Web reserves the right to disclose relevant information following official judicial practices, such as complying with a valid subpoena or court order.",
       },
     ],
   },
@@ -75,24 +75,24 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        html: "Woo Commerce Launchpad' website may contain links to third-party websites. Please be aware that Woo Commerce Launchpad has no control over these websites' content or privacy practices, as they operate independently with their own distinct privacy policies.",
+        html: "WooCommerce Web's website may contain links to third-party websites. Please be aware that WooCommerce Web has no control over these websites' content or privacy practices, as they operate independently with their own distinct privacy policies.",
       },
       {
         type: "p",
-        html: "As a result, Woo Commerce Launchpad cannot assume any responsibility or liability for these third-party websites' activities, content, or policies. Additionally, including these links on Woo Commerce Launchpad' website does not imply endorsement of the information or products on these external sites.",
+        html: "As a result, WooCommerce Web cannot assume any responsibility or liability for these third-party websites' activities, content, or policies. Additionally, including these links on WooCommerce Web's website does not imply endorsement of the information or products on these external sites.",
       },
       {
         type: "p",
-        html: "Should you choose to access any third-party websites linked to Woo Commerce Launchpad' website, please note that you do so at your own discretion and risk. We encourage you to review the privacy policies of these websites before providing any personal information or engaging with their content.",
+        html: "Should you choose to access any third-party websites linked to WooCommerce Web's website, please note that you do so at your own discretion and risk. We encourage you to review the privacy policies of these websites before providing any personal information or engaging with their content.",
       },
     ],
   },
   {
-    title: "Woo Commerce Launchpad Is Committed to Data Security",
+    title: "WooCommerce Web Is Committed to Data Security",
     blocks: [
       {
         type: "p",
-        html: "At Woo Commerce Launchpad, we prioritize the security of your data. We have implemented comprehensive practices to ensure the proper use, accuracy, and protection of the information we collect, both online and offline, encompassing electronic and managerial measures.",
+        html: "At WooCommerce Web, we prioritize the security of your data. We have implemented comprehensive practices to ensure the proper use, accuracy, and protection of the information we collect, both online and offline, encompassing electronic and managerial measures.",
       },
       {
         type: "p",
@@ -102,19 +102,19 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
   },
   {
     title:
-      "Woo Commerce Launchpad Is Committed to Protecting Children's Privacy Online",
+      "WooCommerce Web Is Committed to Protecting Children's Privacy Online",
     blocks: [
       {
         type: "p",
-        html: "We take children's privacy seriously at Woo Commerce Launchpad. As such, we do not knowingly collect or maintain information on our website from individuals under 13. Our website is not designed to attract individuals under 13, and it is not intended for users under 18.",
+        html: "We take children's privacy seriously at WooCommerce Web. As such, we do not knowingly collect or maintain information on our website from individuals under 13. Our website is not designed to attract individuals under 13, and it is not intended for users under 18.",
       },
       {
         type: "p",
-        html: "Suppose we become aware that an individual under 18 has provided personal information through our website. In that case, Woo Commerce Launchpad will promptly delete that information and refrain from using it for any purpose.",
+        html: "Suppose we become aware that an individual under 18 has provided personal information through our website. In that case, WooCommerce Web will promptly delete that information and refrain from using it for any purpose.",
       },
       {
         type: "p",
-        html: "Woo Commerce Launchpad encourages parents and legal guardians to discuss openly with their children about the potential risks of sharing personal information online.",
+        html: "WooCommerce Web encourages parents and legal guardians to discuss openly with their children about the potential risks of sharing personal information online.",
       },
     ],
   },
@@ -123,7 +123,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        html: "By using our website, you consent to Woo Commerce Launchpad' Privacy Policy.",
+        html: "By using our website, you consent to WooCommerce Web's Privacy Policy.",
       },
       {
         type: "p",
@@ -136,7 +136,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     blocks: [
       {
         type: "p",
-        html: "At Woo Commerce Launchpad, you can navigate our website and access its features without needing personal information. Additionally, you can opt out of specific activities by sending us an email or utilizing the opt-out mechanisms provided within those activities.",
+        html: "At WooCommerce Web, you can navigate our website and access its features without needing personal information. Additionally, you can opt out of specific activities by sending us an email or utilizing the opt-out mechanisms provided within those activities.",
       },
     ],
   },

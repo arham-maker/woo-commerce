@@ -13,7 +13,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Us | Woo Commerce Launchpad",
+  title: "About Us | WooCommerce Web",
   description:
     "A global design agency — phenomenal concepts, flawless execution, and seamless service delivery from WooCommerce Web.",
 };
@@ -41,7 +41,7 @@ export default function AboutUsPage() {
               <br className="hidden sm:block" /> Agency
             </span>
           }
-          description="Phenomenal concepts, flawless execution, and seamless service delivery is just the beginning at LogoEminent."
+          description="Phenomenal concepts, flawless execution, and seamless service delivery is just the beginning at WooCommerce Web."
           image={ASSETS.aboutHero}
           imageAlt="A Global Design Agency"
           imageWidth={406}

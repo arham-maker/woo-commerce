@@ -12,7 +12,7 @@ import { Faq } from "@/components/sections/faq";
 import { ContactCta } from "@/components/sections/contact-cta";
 
 export const metadata: Metadata = {
-  title: "Get reliable hosting and web management solutions | Woo Commerce Launchpad",
+  title: "Get reliable hosting and web management solutions | WooCommerce Web",
   description:
     "At WooCommerce Web, we offer comprehensive hosting and web management solutions that cater to every aspect of your online presence.",
 };

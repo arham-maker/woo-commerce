@@ -17,7 +17,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Custom Woo-Commerce Designs | Woo Commerce Launchpad",
+  title: "Custom Woo-Commerce Designs | WooCommerce Web",
   description:
     "Get a personalized WooCommerce design that highlights your brand and delivers a seamless user experience.",
 };

@@ -6,7 +6,7 @@ import { ContactUsBanner } from "@/components/sections/contact-us-banner";
 import { ContactUsSection } from "@/components/sections/contact-us-section";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Woo Commerce Launchpad",
+  title: "Contact Us | WooCommerce Web",
   description:
     "Contact WooCommerce Web for WooCommerce website design and development needs.",
 };

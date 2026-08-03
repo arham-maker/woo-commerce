@@ -15,7 +15,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "A powerful solution for social media management | Woo Commerce Launchpad",
+  title: "A powerful solution for social media management | WooCommerce Web",
   description:
     "Our all-in-one social media management platform unlocks the full potential of social to transform your marketing strategy.",
 };

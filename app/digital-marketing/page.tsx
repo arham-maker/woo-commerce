@@ -13,7 +13,7 @@ import { ReviewsCta } from "@/components/sections/reviews-cta";
 import { ContactCta } from "@/components/sections/contact-cta";
 
 export const metadata: Metadata = {
-  title: "Eliminate your toughest internet Marketing | Woo Commerce Launchpad",
+  title: "Eliminate your toughest internet Marketing | WooCommerce Web",
   description:
     "Strike out your entire digital marketing to-do list and see profound ROI with a single team of digital marketing specialists.",
 };

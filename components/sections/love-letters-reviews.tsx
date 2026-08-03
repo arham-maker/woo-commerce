@@ -7,7 +7,7 @@ import { Container } from "@/components/layout/container";
 
 const reviews = Array.from({ length: 6 }, () => ({
   title: "Best Job!!!",
-  body: "My business just got off the ground, thus I wanted the greatest logo possible. Choosing only one agency was challenging. So, I looked through reviews of custom logo creators on numerous websites, and I'm so happy I found Logo Eminent. They truly are the finest!",
+  body: "My business just got off the ground, thus I wanted the greatest logo possible. Choosing only one agency was challenging. So, I looked through reviews of custom logo creators on numerous websites, and I'm so happy I found WooCommerce Web. They truly are the finest!",
   author: "Diesel Simon",
   rating: 5,
 }));

@@ -7,9 +7,9 @@ import { TermsContent } from "@/components/sections/terms-content";
 import { TERMS_INTRO } from "@/lib/terms-content";
 
 export const metadata: Metadata = {
-  title: "Terms And Conditions | Woo Commerce Launchpad",
+  title: "Terms And Conditions | WooCommerce Web",
   description:
-    "These guidelines outline using the materials and data on the Woo Commerce Launchpad website.",
+    "These guidelines outline using the materials and data on the WooCommerce Web website.",
 };
 
 export default function TermsPage() {

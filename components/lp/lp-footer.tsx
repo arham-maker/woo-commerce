@@ -12,10 +12,10 @@ export function LpFooter() {
             <Link href="/lp" className="shrink-0">
               <Image
                 src={ASSETS.lp.footerLogo}
-                alt="WooCommerce Web"
-                width={220}
-                height={48}
-                className="h-10 w-auto md:h-12"
+                alt="WOO"
+                width={161}
+                height={96}
+                className="h-12 w-auto md:h-16"
               />
             </Link>
             <Image
@@ -32,7 +32,7 @@ export function LpFooter() {
       <div className="bg-black pb-6">
         <Container>
           <div className="flex flex-col gap-3 border-t border-white/10 pt-5 text-sm text-white/80 md:flex-row md:items-center md:justify-between">
-            <p>© Woo Commerce Launchpad 2024. All rights reserved.</p>
+            <p>© WooCommerce Web 2024. All rights reserved.</p>
             <p className="md:text-right">
               <Link href="/lp/terms" className="hover:text-white">
                 TERMS & CONDITIONS
@@ -46,7 +46,7 @@ export function LpFooter() {
           <p className="mt-6 text-center text-xs leading-relaxed text-white/60 md:text-[12px]">
             <span className="text-sm text-white/80">Disclaimer</span>
             <br />
-            Woocommercelaunchpad is an independent company that provides design
+            WooCommerce Web is an independent company that provides design
             and development services for e-commerce solutions. We are not
             affiliated, associated, authorized, endorsed by, or in any way
             officially connected with WooCommerce., or any of its subsidiaries

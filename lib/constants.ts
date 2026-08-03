@@ -7,7 +7,8 @@ export const SITE = {
 } as const;
 
 export const ASSETS = {
-  logo: "https://woocommercelaunchpad.com/assets/images/logo.png",
+  logo: "/WooCom-Web-transparent.png",
+  wooMark: "/woo-mark.png",
   trustpilot: "https://woocommercelaunchpad.com/assets/images/banner/trustpilot.png",
   hero: [
     "https://woocommercelaunchpad.com/assets/images/banner/img.webp",
@@ -327,8 +328,8 @@ export const ASSETS = {
     "https://woocommercelaunchpad.com/assets/images/website-design/img6.png",
   contactMap: "https://woocommercelaunchpad.com/assets/images/map.png",
   lp: {
-    logo: "https://woocommercelaunchpad.com/lp1/assets/images/logo.webp",
-    footerLogo: "https://woocommercelaunchpad.com/lp1/assets/images/f-logo.webp",
+    logo: "/WooCom-Web-transparent.png",
+    footerLogo: "/woo-mark.png",
     hero: "https://woocommercelaunchpad.com/lp1/assets/images/banner/lp-img.png",
     clients: "https://woocommercelaunchpad.com/lp1/assets/images/top-sec/1.png",
     certified: "https://woocommercelaunchpad.com/lp1/assets/images/sec5/img.png",

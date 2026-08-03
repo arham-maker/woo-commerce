@@ -50,8 +50,7 @@ export function Comprehensive({
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-8">
           <FadeIn direction="left" className="lg:col-span-7">
             <h2 className="mb-6 max-w-2xl text-[28px] font-bold leading-[1.25] text-[#333] md:mb-8 md:text-[30px]">
-              Comprehensive WooCommerce Development Services by WooCommerce
-              Launchpad
+              Comprehensive WooCommerce Development Services by WooCommerce Web
             </h2>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-black md:mb-12 md:text-xl">
               At WooCommerce Web, e-commerce website development extends

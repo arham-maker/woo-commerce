@@ -16,7 +16,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "WooCommerce Maintenance | Woo Commerce Launchpad",
+  title: "WooCommerce Maintenance | WooCommerce Web",
   description:
     "At WooCommerce Web, we elevate your store with proactive maintenance. Our team expertly manages updates, security, and performance.",
 };

@@ -6,9 +6,9 @@ import { PrivacyContent } from "@/components/sections/privacy-content";
 import { PRIVACY_INTRO } from "@/lib/privacy-content";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Woo Commerce Launchpad",
+  title: "Privacy Policy | WooCommerce Web",
   description:
-    "At Woo Commerce Launchpad, we prioritize the respect and transparency of user data and GDPR compliance.",
+    "At WooCommerce Web, we prioritize the respect and transparency of user data and GDPR compliance.",
 };
 
 export default function Lp1PrivacyPolicyPage() {

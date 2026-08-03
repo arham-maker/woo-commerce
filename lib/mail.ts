@@ -20,18 +20,24 @@ function parseSecure(port: number): boolean {
 
 export function getMailConfig() {
   const port = Number(process.env.SMTP_PORT || "465");
+  const pass =
+    process.env.SMTP_PASS?.trim() || process.env.SMTP_PASSWORD?.trim();
+  if (!pass) {
+    throw new Error("Missing environment variable: SMTP_PASS");
+  }
 
   return {
     host: requiredEnv("SMTP_HOST"),
     port,
     secure: parseSecure(port),
     user: requiredEnv("SMTP_USER"),
-    pass: requiredEnv("SMTP_PASS"),
+    pass,
     fromAddress: requiredEnv("SMTP_FROM_EMAIL"),
-    fromName: process.env.SMTP_FROM_NAME?.trim() || "woo-commerce",
+    fromName: process.env.SMTP_FROM_NAME?.trim() || "WooCommerce Web",
     adminAddress:
       process.env.SMTP_ADMIN_EMAIL?.trim() ||
-      requiredEnv("SMTP_FROM_EMAIL"),
+      process.env.FORM_RECIPIENT_EMAIL?.trim() ||
+      "info@woocommerceweb.com",
   };
 }
 
@@ -127,10 +133,15 @@ export async function sendContactEmails(payload: ContactPayload) {
     html: buildAdminHtml(payload),
   });
 
-  await transporter.sendMail({
-    from,
-    to: payload.email,
-    subject: `We received your message — ${config.fromName}`,
-    html: buildUserHtml(payload, config.fromName),
-  });
+  try {
+    await transporter.sendMail({
+      from,
+      to: payload.email,
+      subject: `We received your message — ${config.fromName}`,
+      html: buildUserHtml(payload, config.fromName),
+    });
+  } catch (error) {
+    // Admin notification is the source of truth; auto-reply failures should not fail the form.
+    console.error("[mail] user confirmation failed", error);
+  }
 }

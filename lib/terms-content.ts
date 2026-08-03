@@ -4,7 +4,7 @@ export type TermsBlock = LegalBlock;
 export type TermsSection = LegalSection;
 
 export const TERMS_INTRO =
-  "These guidelines outline using the materials and data on the Woo Commerce Launchpad website. They cover what you can do with the content, who can access it, and the limitations of our liability.";
+  "These guidelines outline using the materials and data on the WooCommerce Web website. They cover what you can do with the content, who can access it, and the limitations of our liability.";
 
 export const TERMS_SECTIONS: TermsSection[] = [
   {
@@ -25,7 +25,7 @@ export const TERMS_SECTIONS: TermsSection[] = [
     blocks: [
       {
         type: "p",
-        html: "Woo Commerce Launchpad’s refund policy will be nil if;",
+        html: "WooCommerce Web’s refund policy will be nil if;",
       },
       {
         type: "ul",
@@ -53,7 +53,7 @@ export const TERMS_SECTIONS: TermsSection[] = [
       },
       {
         type: "p",
-        html: "Note: Woo Commerce Launchpad holds all rights to reject any project or cancel the contract whenever it deems necessary. After the refund, you will not have any rights to use the designs for any purpose; they will be the sole property of Woo Commerce Launchpad. The company will be the rightful owner of the designs.",
+        html: "Note: WooCommerce Web holds all rights to reject any project or cancel the contract whenever it deems necessary. After the refund, you will not have any rights to use the designs for any purpose; they will be the sole property of WooCommerce Web. The company will be the rightful owner of the designs.",
       },
     ],
   },
@@ -78,7 +78,7 @@ export const TERMS_SECTIONS: TermsSection[] = [
       },
       {
         type: "p",
-        html: "After you have received your refund, you will not have any rights to any designs submitted by Woo Commerce Launchpad, the information will be submitted the Copyright Acquisition of the Government Copyright Agencies to maintain legality.",
+        html: "After you have received your refund, you will not have any rights to any designs submitted by WooCommerce Web, the information will be submitted the Copyright Acquisition of the Government Copyright Agencies to maintain legality.",
       },
     ],
   },
@@ -126,7 +126,7 @@ export const TERMS_SECTIONS: TermsSection[] = [
     blocks: [
       {
         type: "p",
-        html: "Woo Commerce Launchpad keeps the records of finalized designs so that in case of any misplaced order, you will be provided the exact file. However, files extraction will be charged additionally.",
+        html: "WooCommerce Web keeps the records of finalized designs so that in case of any misplaced order, you will be provided the exact file. However, files extraction will be charged additionally.",
       },
     ],
   },
@@ -145,7 +145,7 @@ export const TERMS_SECTIONS: TermsSection[] = [
       {
         type: "ul",
         items: [
-          'YOU agree that Woo Commerce Launchpad is not liable for any correspondence from email address (es) other than the ones followed by our own domain i.e. "..@woocommercelaunchpad.com " or/and any toll free number that is not mentioned on our website. Woo Commerce Launchpad should not be held responsible for any damage(s) caused by such correspondence. We only take responsibility of any communication through email address (es) under our own domain name or/and via toll free number i.e. already mentioned on Woo Commerce Launchpad’s website.',
+          'YOU agree that WooCommerce Web is not liable for any correspondence from email address (es) other than the ones followed by our own domain i.e. "..@woocommerceweb.com " or/and any toll free number that is not mentioned on our website. WooCommerce Web should not be held responsible for any damage(s) caused by such correspondence. We only take responsibility of any communication through email address (es) under our own domain name or/and via toll free number i.e. already mentioned on WooCommerce Web’s website.',
           "We are not responsible for any damages caused due to other contact details not provided by us.",
           "Project activation charges will apply if client fails to respond over a period of 45 days.",
           "We take full responsibility of all the information provided through our official domains.",

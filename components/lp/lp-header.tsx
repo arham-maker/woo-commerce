@@ -13,9 +13,9 @@ export function LpHeader() {
           <Image
             src={ASSETS.lp.logo}
             alt="WooCommerce Web"
-            width={265}
-            height={57}
-            className="h-11 w-auto sm:h-[57px]"
+            width={440}
+            height={94}
+            className="h-14 w-auto sm:h-16 md:h-[88px]"
             priority
           />
         </Link>

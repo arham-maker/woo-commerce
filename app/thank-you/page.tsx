@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import { ThankYouHero } from "@/components/sections/thank-you-hero";
 
 export const metadata: Metadata = {
-  title: "Thank You | Woo Commerce Launchpad",
+  title: "Thank You | WooCommerce Web",
   description:
     "Thanks! We have received your request. Expect a quick reply from WooCommerce Web.",
 };

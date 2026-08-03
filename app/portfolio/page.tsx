@@ -13,7 +13,7 @@ import { Faq } from "@/components/sections/faq";
 export const metadata: Metadata = {
   title: "Please take a look at our elaborate portfolio | WooCommerce Web",
   description:
-    "Explore WooCommerce Web's website portfolio and see the excellence we provide to our clients.",
+    "Explore WooCommerce Web'ss website portfolio and see the excellence we provide to our clients.",
 };
 
 export default function PortfolioPage() {

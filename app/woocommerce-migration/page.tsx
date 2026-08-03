@@ -18,7 +18,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Migration for a Seamless Transition | Woo Commerce Launchpad",
+  title: "Migration for a Seamless Transition | WooCommerce Web",
   description:
     "At WooCommerce Web, we ensure a smooth, efficient migration of your WooCommerce store. Our expert team handles all aspects, safeguarding data, minimizing downtime, and preserving performance.",
 };

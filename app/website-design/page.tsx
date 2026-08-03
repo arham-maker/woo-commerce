@@ -20,7 +20,7 @@ import { WEBSITE_DESIGN_FAQS } from "@/lib/website-design-faqs";
 export const metadata: Metadata = {
   title: "Website Design Services Starting from $350 Only",
   description:
-    "Level up your online presence with WooCommerce Web's custom web design services.",
+    "Level up your online presence with WooCommerce Web'ss custom web design services.",
 };
 
 const websiteProcessSteps = [
@@ -75,7 +75,7 @@ export default function WebsiteDesignPage() {
               <span className="text-brand">$350</span> Only
             </span>
           }
-          description="Level up your online presence with WooCommerce Web's custom web design services. Our team of web professionals will conjure up a visually captivating and user-friendly website masterpiece that'll leave your competitors spellbound."
+          description="Level up your online presence with WooCommerce Web'ss custom web design services. Our team of web professionals will conjure up a visually captivating and user-friendly website masterpiece that'll leave your competitors spellbound."
           image={ASSETS.websiteDesignHero}
           imageAlt="Website design services showcase"
           proof="trustpilot"

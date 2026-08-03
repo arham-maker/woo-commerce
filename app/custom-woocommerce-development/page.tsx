@@ -19,7 +19,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { ASSETS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "WooCommerce Development Services | Woo Commerce Launchpad",
+  title: "WooCommerce Development Services | WooCommerce Web",
   description:
     "Benefit from over 12 years of expertise in e-commerce solutions with WooCommerce development services.",
 };
