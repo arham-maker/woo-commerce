@@ -42,7 +42,7 @@ export function OrderPaymentView() {
           <Link href="/" className="shrink-0">
             <Image
               src={ASSETS.logo}
-              alt="WooCommerce Launchpad"
+              alt="WooCommerce Web"
               width={200}
               height={44}
               className="h-9 w-auto sm:h-10"

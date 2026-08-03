@@ -27,7 +27,7 @@ export function DigitalMarketingPlatforms() {
               Services
             </h2>
             <p className="text-sm leading-relaxed text-white md:text-xl xl:text-2xl">
-              Elevate your digital growth with WooCommerce Launchpad’s top-tier
+              Elevate your digital growth with WooCommerce Web’s top-tier
               social media marketing services. We harness the power of each
               platform to precisely target and engage your audience, driving
               impactful results.
@@ -64,7 +64,7 @@ export function DigitalMarketingPlatforms() {
           <FadeIn direction="right" delay={0.1}>
             <div className="ml-auto flex w-full flex-col items-start justify-center gap-2.5 rounded-[5px] bg-white p-[15px] md:w-[90%] md:gap-[15px] md:p-5 xl:gap-7 xl:rounded-[15px] xl:px-[52px] xl:py-[65px]">
               <p className="text-sm font-medium leading-[1.5] text-[#333] md:text-sm xl:text-lg xl:leading-[1.66]">
-                At WooCommerce Launchpad, we craft tailored marketing strategies
+                At WooCommerce Web, we craft tailored marketing strategies
                 for TikTok and Twitter that align with your business goals. Our
                 team creates engaging content, manages ad campaigns, and
                 analyzes performance to maximize your reach and engagement. We

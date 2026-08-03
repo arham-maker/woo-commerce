@@ -18,7 +18,7 @@ import { ASSETS } from "@/lib/constants";
 import { LOGO_DESIGN_FAQS } from "@/lib/logo-design-faqs";
 
 export const metadata: Metadata = {
-  title: "Get a Professional Logo Designer for $149 only | WooCommerce Launchpad",
+  title: "Get a Professional Logo Designer for $149 only | WooCommerce Web",
   description:
     "Our logo designers craft professional, bespoke, and customer-centric logo designs starting at $149.",
 };

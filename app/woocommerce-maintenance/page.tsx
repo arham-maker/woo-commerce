@@ -18,7 +18,7 @@ import { ASSETS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "WooCommerce Maintenance | Woo Commerce Launchpad",
   description:
-    "At WooCommerce Launchpad, we elevate your store with proactive maintenance. Our team expertly manages updates, security, and performance.",
+    "At WooCommerce Web, we elevate your store with proactive maintenance. Our team expertly manages updates, security, and performance.",
 };
 
 const maintenanceServices = [
@@ -63,7 +63,7 @@ export default function WoocommerceMaintenancePage() {
         <ServicePageHero
           subtitle="Elevate Your Store with expert"
           title="WooCommerce Maintenance"
-          description="At WooCommerce Launchpad, we elevate your store with proactive maintenance. Our team expertly manages updates, security, and performance, so you can focus on growing your business and delighting customers."
+          description="At WooCommerce Web, we elevate your store with proactive maintenance. Our team expertly manages updates, security, and performance, so you can focus on growing your business and delighting customers."
           image={ASSETS.maintenanceHero}
           imageAlt="WooCommerce maintenance"
           imageWidth={784}

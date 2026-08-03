@@ -6,9 +6,9 @@ import { PageBanner } from "@/components/sections/page-banner";
 import { FaqPageSection } from "@/components/sections/faq-page";
 
 export const metadata: Metadata = {
-  title: "Got Questions? Contact Our Team For Expert Guidance. | WooCommerce Launchpad",
+  title: "Got Questions? Contact Our Team For Expert Guidance. | WooCommerce Web",
   description:
-    "Frequently asked questions about WooCommerce Launchpad services, timelines, migrations, support, and more.",
+    "Frequently asked questions about WooCommerce Web services, timelines, migrations, support, and more.",
 };
 
 export default function FaqPage() {

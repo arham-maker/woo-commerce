@@ -11,9 +11,9 @@ import { ReviewsCta } from "@/components/sections/reviews-cta";
 import { Faq } from "@/components/sections/faq";
 
 export const metadata: Metadata = {
-  title: "Please take a look at our elaborate portfolio | WooCommerce Launchpad",
+  title: "Please take a look at our elaborate portfolio | WooCommerce Web",
   description:
-    "Explore WooCommerce Launchpad's website portfolio and see the excellence we provide to our clients.",
+    "Explore WooCommerce Web's website portfolio and see the excellence we provide to our clients.",
 };
 
 export default function PortfolioPage() {

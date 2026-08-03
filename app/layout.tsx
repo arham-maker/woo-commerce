@@ -35,9 +35,9 @@ const outfit = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "WooCommerce Launchpad | Achieve E-Commerce Success",
+  title: "WooCommerce Web | Achieve E-Commerce Success",
   description:
-    "Whatever your success goals are, WooCommerce Launchpad helps you reach them with custom WooCommerce development, themes, plugins, and more.",
+    "Whatever your success goals are, WooCommerce Web helps you reach them with custom WooCommerce development, themes, plugins, and more.",
   icons: {
     icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
     shortcut: "/favicon.ico",

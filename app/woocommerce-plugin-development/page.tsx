@@ -19,7 +19,7 @@ import { ASSETS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Functionality with Tailored Plugins | Woo Commerce Launchpad",
   description:
-    "WooCommerce Launchpad excels in developing robust, feature-rich plugins that boost functionality, optimize performance, and enrich the user journey.",
+    "WooCommerce Web excels in developing robust, feature-rich plugins that boost functionality, optimize performance, and enrich the user journey.",
 };
 
 const aboutServices = [
@@ -97,7 +97,7 @@ export default function WoocommercePluginDevelopmentPage() {
         <ServicePageHero
           subtitle="Boost Your E-Commerce"
           title="Functionality with Tailored Plugins"
-          description="WooCommerce Launchpad excels in developing robust, feature-rich plugins that boost functionality, optimize performance, and enrich the user journey."
+          description="WooCommerce Web excels in developing robust, feature-rich plugins that boost functionality, optimize performance, and enrich the user journey."
           image={ASSETS.pluginDevHero}
           imageAlt="WooCommerce plugin development"
           imageWidth={938}
@@ -111,7 +111,7 @@ export default function WoocommercePluginDevelopmentPage() {
               Development Service
             </>
           }
-          lead="At WooCommerce Launchpad, our WordPress plugin development service is dedicated to crafting custom plugins tailored to your specific needs. We pride ourselves on our deep understanding of the WordPress Core API, which allows us to develop powerful plugins that seamlessly integrate with various WordPress versions and remain theme-neutral."
+          lead="At WooCommerce Web, our WordPress plugin development service is dedicated to crafting custom plugins tailored to your specific needs. We pride ourselves on our deep understanding of the WordPress Core API, which allows us to develop powerful plugins that seamlessly integrate with various WordPress versions and remain theme-neutral."
           items={aboutServices}
           showCta={false}
           gridClassName="gap-7 lg:gap-7"

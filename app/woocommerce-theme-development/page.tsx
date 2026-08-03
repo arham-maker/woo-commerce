@@ -137,7 +137,7 @@ export default function WoocommerceThemeDevelopmentPage() {
         <Clients />
         <FeatureSplitSection
           title="Why Choose Our WooCommerce Theme Development Services"
-          lead="At WooCommerce Launchpad, we create custom themes that are not only visually stunning but also optimized for performance and user experience. Our expert developers ensure that your WooCommerce theme is tailored to meet your unique business needs, providing a seamless shopping experience for your customers."
+          lead="At WooCommerce Web, we create custom themes that are not only visually stunning but also optimized for performance and user experience. Our expert developers ensure that your WooCommerce theme is tailored to meet your unique business needs, providing a seamless shopping experience for your customers."
           image={ASSETS.themeDevWhy}
           imageAlt="Why choose our WooCommerce theme development"
           showCta

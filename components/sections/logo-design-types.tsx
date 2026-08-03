@@ -13,17 +13,17 @@ const logoTypes = [
   },
   {
     title: "Typographic Logo Design",
-    body: "Typographic logo design uses creative typography to build unique brand identities. At WooCommerce Launchpad, we craft logos with innovative fonts and layouts. Our designs ensure clarity, simplicity, and strong visual impact.",
+    body: "Typographic logo design uses creative typography to build unique brand identities. At WooCommerce Web, we craft logos with innovative fonts and layouts. Our designs ensure clarity, simplicity, and strong visual impact.",
     img: ASSETS.logoDesignTypes[1],
   },
   {
     title: "Illustrative Logo Design",
-    body: "Illustrative logo design uses detailed graphics to create memorable and striking logos. At WooCommerce Launchpad, we craft logos that vividly represent your brand's story and values. Our designs blend artistry and creativity for a lasting impression.",
+    body: "Illustrative logo design uses detailed graphics to create memorable and striking logos. At WooCommerce Web, we craft logos that vividly represent your brand's story and values. Our designs blend artistry and creativity for a lasting impression.",
     img: ASSETS.logoDesignTypes[2],
   },
   {
     title: "Animated Logo Design",
-    body: "Animated logos use motion to enhance your brand's identity. At WooCommerce Launchpad, we create dynamic and engaging logos that capture attention and boost brand recognition. Our designs blend creativity with animation to leave a lasting impression.",
+    body: "Animated logos use motion to enhance your brand's identity. At WooCommerce Web, we create dynamic and engaging logos that capture attention and boost brand recognition. Our designs blend creativity with animation to leave a lasting impression.",
     img: ASSETS.logoDesignTypes[3],
   },
 ];

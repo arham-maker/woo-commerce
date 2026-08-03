@@ -42,11 +42,11 @@ export function Assist() {
     <section id="assist" className="bg-white py-16 md:py-24">
       <Container>
         <FadeIn className="mx-auto mb-4 max-w-4xl text-center">
-          <SectionTitle>How WooCommerce Launchpad Can Assist You</SectionTitle>
+          <SectionTitle>How WooCommerce Web Can Assist You</SectionTitle>
         </FadeIn>
         <FadeIn delay={0.1} className="mx-auto mb-12 max-w-3xl text-center">
           <SectionLead>
-            WooCommerce Launchpad provides tailored e-commerce solutions to boost
+            WooCommerce Web provides tailored e-commerce solutions to boost
             your online store&apos;s performance. From custom development to
             seamless integrations and ongoing support, we help you achieve your
             business goals efficiently and effectively.

@@ -106,7 +106,7 @@ export function Header() {
         <Link href="/" className="shrink-0">
           <Image
             src={ASSETS.logo}
-            alt="WooCommerce Launchpad"
+            alt="WooCommerce Web"
             width={265}
             height={57}
             className="h-8 w-auto max-w-[150px] object-contain sm:h-11 sm:max-w-none md:h-[57px]"

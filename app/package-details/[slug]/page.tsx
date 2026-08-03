@@ -24,10 +24,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const pkg = getPackageBySlug(slug);
   if (!pkg) {
-    return { title: "Package Details | WooCommerce Launchpad" };
+    return { title: "Package Details | WooCommerce Web" };
   }
   return {
-    title: `${pkg.name} | Package Details | WooCommerce Launchpad`,
+    title: `${pkg.name} | Package Details | WooCommerce Web`,
     description: pkg.tagline,
   };
 }

@@ -7,7 +7,7 @@ import { Clients } from "@/components/sections/clients";
 import { Pricing } from "@/components/sections/pricing";
 
 export const metadata: Metadata = {
-  title: "Packages | WooCommerce Launchpad",
+  title: "Packages | WooCommerce Web",
   description:
     "Affordable WooCommerce pricing packages that support your marketing goals and drive long-term success.",
 };

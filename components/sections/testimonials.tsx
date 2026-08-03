@@ -13,31 +13,31 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     quote:
-      "Our partnership with WooCommerce Launchpad transformed our online store into a top-performing sales machine. Their comprehensive development approach, from design to integration, was flawless.",
+      "Our partnership with WooCommerce Web transformed our online store into a top-performing sales machine. Their comprehensive development approach, from design to integration, was flawless.",
     name: "Sarah J.",
     role: "Founder of Trendy Boutique",
   },
   {
     quote:
-      "Migrating to WooCommerce with WooCommerce Launchpad was seamless and efficient. Their expertise and support ensured a smooth transition, and our new site is faster and more reliable than ever.",
+      "Migrating to WooCommerce with WooCommerce Web was seamless and efficient. Their expertise and support ensured a smooth transition, and our new site is faster and more reliable than ever.",
     name: "Emily R.",
     role: "Owner of Gourmet Delights",
   },
   {
     quote:
-      "WooCommerce Launchpad delivered beyond our expectations. Their team crafted a visually stunning and highly functional WooCommerce site that perfectly aligns with our brand.",
+      "WooCommerce Web delivered beyond our expectations. Their team crafted a visually stunning and highly functional WooCommerce site that perfectly aligns with our brand.",
     name: "James T.",
     role: "CEO of Tech Innovators",
   },
   {
     quote:
-      "WooCommerce Launchpad exceeded our expectations in every way. Their team provided a high-performance, SEO-friendly website that has significantly boosted our online presence.",
+      "WooCommerce Web exceeded our expectations in every way. Their team provided a high-performance, SEO-friendly website that has significantly boosted our online presence.",
     name: "Michael B.",
     role: "Director of Digital Strategy",
   },
   {
     quote:
-      "The custom solutions provided by WooCommerce Launchpad have revolutionized our e-commerce operations. Their expertise in custom development and integrations has streamlined our processes and improved our customer experience. We highly recommend their services.",
+      "The custom solutions provided by WooCommerce Web have revolutionized our e-commerce operations. Their expertise in custom development and integrations has streamlined our processes and improved our customer experience. We highly recommend their services.",
     name: "Lisa W.",
     role: "Chief Operating Officer",
   },

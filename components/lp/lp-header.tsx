@@ -9,10 +9,10 @@ export function LpHeader() {
   return (
     <header className="relative z-40 w-full bg-white">
       <div className="mx-auto flex max-w-[1320px] items-center justify-between gap-4 px-4 py-[18px] sm:px-6 lg:px-8">
-        <Link href="/lp1" className="shrink-0">
+        <Link href="/lp" className="shrink-0">
           <Image
             src={ASSETS.lp.logo}
-            alt="WooCommerce Launchpad"
+            alt="WooCommerce Web"
             width={265}
             height={57}
             className="h-11 w-auto sm:h-[57px]"

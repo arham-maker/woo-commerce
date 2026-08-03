@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "woocommercelaunchpad.com",
+        pathname: "/lp/**",
+      },
+      {
+        protocol: "https",
+        hostname: "woocommercelaunchpad.com",
         pathname: "/lp1/**",
       },
     ],

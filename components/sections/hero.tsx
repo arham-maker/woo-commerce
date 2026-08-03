@@ -50,13 +50,13 @@ export function Hero() {
       <button
         type="button"
         onClick={scrollToClients}
-        className="absolute top-1/2 left-[3%] z-10 hidden h-[230px] w-5 -translate-y-1/2 flex-col items-center justify-end gap-[60px] lg:inline-flex"
+        className="absolute top-1/2 left-[3%] cursor-pointer  z-10 hidden h-[230px] w-5 -translate-y-1/2 flex-col items-center justify-end gap-[60px] lg:inline-flex"
         aria-label="Scroll down to clients"
       >
         <span className="origin-center -rotate-90 whitespace-nowrap pt-0.5 text-sm font-semibold leading-tight text-[#666]">
           Scroll Down
         </span>
-        <span className="icon shrink-0" aria-hidden>
+        <span className="icon shrink-0 " aria-hidden>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="8"
@@ -91,7 +91,7 @@ export function Hero() {
               ready ? "translate-x-0" : "-translate-x-6",
             )}
           >
-            Whatever your success goals are, WooCommerce Launchpad helps you
+            Whatever your success goals are, WooCommerce Web helps you
             reach them. Our WordPress-based ecommerce platform supports merchants
             and developers in building and maintaining thriving, enduring
             businesses.

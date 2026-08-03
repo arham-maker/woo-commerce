@@ -15,7 +15,7 @@ import { ASSETS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About Us | Woo Commerce Launchpad",
   description:
-    "A global design agency — phenomenal concepts, flawless execution, and seamless service delivery from WooCommerce Launchpad.",
+    "A global design agency — phenomenal concepts, flawless execution, and seamless service delivery from WooCommerce Web.",
 };
 
 const aboutAgencyRows = [

@@ -54,7 +54,7 @@ export function Comprehensive({
               Launchpad
             </h2>
             <p className="mb-10 max-w-2xl text-base leading-relaxed text-black md:mb-12 md:text-xl">
-              At WooCommerce Launchpad, e-commerce website development extends
+              At WooCommerce Web, e-commerce website development extends
               beyond engineering. It starts with meticulous planning and effective
               UI/UX design, followed by robust core engineering, thorough quality
               control, efficient data management, and strategic marketing

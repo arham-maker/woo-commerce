@@ -84,7 +84,7 @@ export function LpServices() {
           <FadeIn direction="left" className="space-y-6">
             <h2 className="text-[28px] font-medium leading-[1.15] tracking-tight text-white md:text-[40px] lg:text-[44px]">
               Tailored Solutions by
-              <br className="hidden sm:block" /> WooCommerce Launchpad
+              <br className="hidden sm:block" /> WooCommerce Web
             </h2>
             <div className="flex flex-wrap items-center gap-5">
               <GetStartedDialog size="lg" />
@@ -93,7 +93,7 @@ export function LpServices() {
           </FadeIn>
           <FadeIn direction="right" delay={0.1}>
             <p className="text-base leading-relaxed text-white/80 md:text-lg">
-              At WooCommerce Launchpad, we provide customized eCommerce solutions
+              At WooCommerce Web, we provide customized eCommerce solutions
               to fit your unique business needs. Our expert team uses the latest
               technology to optimize your WooCommerce setup and help your business
               thrive online.

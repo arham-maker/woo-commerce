@@ -190,7 +190,7 @@ export function Footer() {
         <Container>
           <div className="flex flex-col items-center justify-between gap-2.5 py-2.5 md:flex-row md:gap-4 md:py-5">
             <p className="text-center text-[10px] leading-[1.4] text-white md:text-left lg:text-sm lg:leading-[1.42]">
-              Copyright © 2024 WooCommerce Launchpad.{" "}
+              Copyright © 2024 WooCommerce Web.{" "}
               <Link
                 href="/terms"
                 className="font-bold text-[#999] underline transition-colors hover:text-brand"

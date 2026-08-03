@@ -19,9 +19,9 @@ import { Faq } from "@/components/sections/faq";
 import { ContactCta } from "@/components/sections/contact-cta";
 
 export const metadata: Metadata = {
-  title: "Expert WooCommerce Store Development Services - WooCommerce Launchpad",
+  title: "Expert WooCommerce Store Development Services - WooCommerce Web",
   description:
-    "Supercharge your e-commerce success with expert WooCommerce solutions from WooCommerce Launchpad.",
+    "Supercharge your e-commerce success with expert WooCommerce solutions from WooCommerce Web.",
 };
 
 const unlockingItems = [
@@ -64,7 +64,7 @@ const contentRows = [
         WooCommerce <br className="hidden sm:block" /> Development Services
       </>
     ),
-    body: "We at WooCommerce Launchpad know how to transform your online shop into a powerhouse of sales and success. Our seasoned developers wield the latest technologies and best practices to ensure that your tailor-made store is secure, scalable, and optimized for speed and performance.",
+    body: "We at WooCommerce Web know how to transform your online shop into a powerhouse of sales and success. Our seasoned developers wield the latest technologies and best practices to ensure that your tailor-made store is secure, scalable, and optimized for speed and performance.",
     image: ASSETS.lp.contentRows[0],
     imageAlt: "WooCommerce development services",
     imageSide: "right" as const,
@@ -97,7 +97,7 @@ export default function Lp1Page() {
         <LpHero />
         <Clients image={ASSETS.lp.clients} />
         <Portfolio
-          lead="We at Woocommerce Launchpad know how to transform your online shop into a powerhouse of sales and success. Our seasoned developers wield the latest technologies."
+          lead="We at WooCommerce Web know how to transform your online shop into a powerhouse of sales and success. Our seasoned developers wield the latest technologies."
         />
         <Process />
         <Pricing

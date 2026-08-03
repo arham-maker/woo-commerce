@@ -171,7 +171,7 @@ type PortfolioProps = {
 };
 
 export function Portfolio({
-  lead = "WooCommerce Launchpad is dedicated to making your online store a beacon of sales and success. Our talented developers use the latest technological advancements to achieve this transformation.",
+  lead = "WooCommerce Web is dedicated to making your online store a beacon of sales and success. Our talented developers use the latest technological advancements to achieve this transformation.",
 }: PortfolioProps) {
   return (
     <section id="portfolio" className="bg-white py-10 sm:py-16 md:py-24">

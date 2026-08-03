@@ -9,10 +9,10 @@ export function LpFooter() {
       <footer className="bg-black pt-[50px] pb-[30px]">
         <Container>
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <Link href="/lp1" className="shrink-0">
+            <Link href="/lp" className="shrink-0">
               <Image
                 src={ASSETS.lp.footerLogo}
-                alt="WooCommerce Launchpad"
+                alt="WooCommerce Web"
                 width={220}
                 height={48}
                 className="h-10 w-auto md:h-12"
@@ -34,11 +34,11 @@ export function LpFooter() {
           <div className="flex flex-col gap-3 border-t border-white/10 pt-5 text-sm text-white/80 md:flex-row md:items-center md:justify-between">
             <p>© Woo Commerce Launchpad 2024. All rights reserved.</p>
             <p className="md:text-right">
-              <Link href="/lp1/terms" className="hover:text-white">
+              <Link href="/lp/terms" className="hover:text-white">
                 TERMS & CONDITIONS
               </Link>
               {" | "}
-              <Link href="/lp1/privacy-policy" className="hover:text-white">
+              <Link href="/lp/privacy-policy" className="hover:text-white">
                 PRIVACY POLICY
               </Link>
             </p>

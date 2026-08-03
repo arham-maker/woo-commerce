@@ -24,7 +24,7 @@ export const WEBSITE_DESIGN_FAQS = [
     a: "Yes. Depending on your needs, our creative staff will write the content appropriate for your website.",
   },
   {
-    q: "How do I get started with WooCommerce Launchpad?",
+    q: "How do I get started with WooCommerce Web?",
     a: "To get started, simply contact us through our website or give us a call. We’ll schedule a consultation to discuss your needs, outline a plan, and provide a quote tailored to your project.",
   },
   {

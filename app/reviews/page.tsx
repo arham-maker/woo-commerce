@@ -6,9 +6,9 @@ import { PageBanner } from "@/components/sections/page-banner";
 import { ReviewsPageSection } from "@/components/sections/reviews-page";
 
 export const metadata: Metadata = {
-  title: "See What Our Customers Say | WooCommerce Launchpad",
+  title: "See What Our Customers Say | WooCommerce Web",
   description:
-    "See why clients love working with WooCommerce Launchpad. Hear from satisfied clients about how our solutions helped them grow.",
+    "See why clients love working with WooCommerce Web. Hear from satisfied clients about how our solutions helped them grow.",
 };
 
 export default function ReviewsPage() {

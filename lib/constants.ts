@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "WooCommerce Launchpad",
+  name: "WooCommerce Web",
   phone: "+1 (682) 267-0492",
   phoneHref: "tel:+1 (682) 267-0492",
   email: "info@woocommerceweb.com",

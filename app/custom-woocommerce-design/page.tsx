@@ -88,7 +88,7 @@ const designServiceRows = [
         WooCommerce <br className="hidden sm:block" /> Development Services
       </>
     ),
-    body: "We at WooCommerce Launchpad know how to transform your online shop into a powerhouse of sales and success. Our seasoned developers wield the latest technologies and best practices to ensure that your tailor-made store is secure, scalable, and optimized for speed and performance.",
+    body: "We at WooCommerce Web know how to transform your online shop into a powerhouse of sales and success. Our seasoned developers wield the latest technologies and best practices to ensure that your tailor-made store is secure, scalable, and optimized for speed and performance.",
     image: ASSETS.customDesignRows[0],
     imageAlt: "WooCommerce development services",
     imageSide: "right" as const,

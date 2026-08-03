@@ -7,7 +7,7 @@ import { ThankYouHero } from "@/components/sections/thank-you-hero";
 export const metadata: Metadata = {
   title: "Thank You | Woo Commerce Launchpad",
   description:
-    "Thanks! We have received your request. Expect a quick reply from WooCommerce Launchpad.",
+    "Thanks! We have received your request. Expect a quick reply from WooCommerce Web.",
 };
 
 export default function ThankYouPage() {

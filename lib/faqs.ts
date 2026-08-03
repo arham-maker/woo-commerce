@@ -1,10 +1,10 @@
 export const FAQS = [
   {
-    q: "What services does WooCommerce Launchpad offer?",
+    q: "What services does WooCommerce Web offer?",
     a: "We provide a range of WooCommerce services including custom development, theme design, plugin development, site migration, integration with other systems, and ongoing maintenance. Our goal is to help you build and manage a high-performing e-commerce store.",
   },
   {
-    q: "How experienced is WooCommerce Launchpad in WooCommerce development?",
+    q: "How experienced is WooCommerce Web in WooCommerce development?",
     a: "Our team has extensive experience with WooCommerce, having successfully delivered over 1,300 projects. We are among the 31 certified WooCommerce Experts globally, ensuring you receive top-notch expertise and service.",
   },
   {
@@ -24,7 +24,7 @@ export const FAQS = [
     a: "We provide ongoing support and maintenance services, including regular updates, security checks, and performance optimizations. Our goal is to ensure your site remains secure, efficient, and up-to-date.",
   },
   {
-    q: "How do I get started with WooCommerce Launchpad?",
+    q: "How do I get started with WooCommerce Web?",
     a: "To get started, simply contact us through our website or give us a call. We'll schedule a consultation to discuss your needs, outline a plan, and provide a quote tailored to your project.",
   },
   {
@@ -36,7 +36,7 @@ export const FAQS = [
     a: "Absolutely! We specialize in integrating WooCommerce with various systems, including payment gateways, CRM systems, and third-party applications, to ensure a seamless and efficient e-commerce experience.",
   },
   {
-    q: "What makes WooCommerce Launchpad different from other WooCommerce developers?",
-    a: "WooCommerce Launchpad stands out for our certified expertise, extensive experience, and comprehensive service offerings. We are dedicated to delivering customized solutions, exceptional quality, and a high level of customer satisfaction.",
+    q: "What makes WooCommerce Web different from other WooCommerce developers?",
+    a: "WooCommerce Web stands out for our certified expertise, extensive experience, and comprehensive service offerings. We are dedicated to delivering customized solutions, exceptional quality, and a high level of customer satisfaction.",
   },
 ] as const;

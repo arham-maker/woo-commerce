@@ -8,7 +8,7 @@ export function DomainHostingHero() {
     <ServicePageHero
       subtitle="Get reliable"
       title="Hosting and web management solutions"
-      description="At WooCommerce Launchpad, we offer comprehensive hosting and web management solutions that cater to every aspect of your online presence."
+      description="At WooCommerce Web, we offer comprehensive hosting and web management solutions that cater to every aspect of your online presence."
       image={ASSETS.domainHostingHero}
       imageAlt="Domain and hosting solutions"
       imageWidth={677}

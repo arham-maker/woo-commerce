@@ -41,7 +41,7 @@ export function LpHero() {
               ready ? "translate-x-0" : "-translate-x-6",
             )}
           >
-            At WooCommerce Launchpad, we transform your online store into a sales
+            At WooCommerce Web, we transform your online store into a sales
             powerhouse. Our expert team crafts stunning, bespoke WooCommerce
             websites that perform flawlessly and maximize customer satisfaction.
           </p>

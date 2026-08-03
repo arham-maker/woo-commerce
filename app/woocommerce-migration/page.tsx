@@ -20,7 +20,7 @@ import { ASSETS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Migration for a Seamless Transition | Woo Commerce Launchpad",
   description:
-    "At WooCommerce Launchpad, we ensure a smooth, efficient migration of your WooCommerce store. Our expert team handles all aspects, safeguarding data, minimizing downtime, and preserving performance.",
+    "At WooCommerce Web, we ensure a smooth, efficient migration of your WooCommerce store. Our expert team handles all aspects, safeguarding data, minimizing downtime, and preserving performance.",
 };
 
 const migrationServices = [
@@ -92,7 +92,7 @@ export default function WoocommerceMigrationPage() {
         <ServicePageHero
           subtitle="Expert WooCommerce"
           title="Migration for a Seamless Transition"
-          description="At WooCommerce Launchpad, we ensure a smooth, efficient migration of your WooCommerce store. Our expert team handles all aspects, safeguarding data, minimizing downtime, and preserving performance."
+          description="At WooCommerce Web, we ensure a smooth, efficient migration of your WooCommerce store. Our expert team handles all aspects, safeguarding data, minimizing downtime, and preserving performance."
           image={ASSETS.migrationHero}
           imageAlt="WooCommerce migration"
           imageWidth={667}
@@ -101,10 +101,10 @@ export default function WoocommerceMigrationPage() {
         />
         <Clients />
         <FeatureSplitSection
-          title="Why Choose WooCommerce Launchpad for Migration?"
-          lead="WooCommerce Launchpad brings unparalleled expertise to every migration project, ensuring a seamless and stress-free transition. Our meticulous approach and commitment to excellence mean your WooCommerce store will be up and running smoothly, with minimal disruption and maximum efficiency."
+          title="Why Choose WooCommerce Web for Migration?"
+          lead="WooCommerce Web brings unparalleled expertise to every migration project, ensuring a seamless and stress-free transition. Our meticulous approach and commitment to excellence mean your WooCommerce store will be up and running smoothly, with minimal disruption and maximum efficiency."
           image={ASSETS.migrationWhy}
-          imageAlt="Why choose WooCommerce Launchpad for migration"
+          imageAlt="Why choose WooCommerce Web for migration"
           showCta
           tone="light"
           className="pb-0 md:pb-0"

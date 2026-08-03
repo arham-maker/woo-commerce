@@ -93,7 +93,7 @@ function buildAdminHtml(payload: ContactPayload): string {
   return `
     <div style="font-family:Arial,sans-serif;color:#222;line-height:1.5;">
       <h2 style="margin:0 0 12px;">New website submission</h2>
-      <p style="margin:0 0 16px;">A new form was submitted on WooCommerce Launchpad.</p>
+      <p style="margin:0 0 16px;">A new form was submitted on WooCommerce Web.</p>
       <table style="border-collapse:collapse;width:100%;max-width:640px;">${body}</table>
     </div>
   `;

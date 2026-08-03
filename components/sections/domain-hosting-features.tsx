@@ -40,7 +40,7 @@ export function DomainHostingFeatures() {
             Dependable Domain and Hosting Solutions
           </h2>
           <p className="text-base leading-relaxed text-[#333] md:text-lg">
-            At WooCommerce Launchpad, we provide secure domain registration and
+            At WooCommerce Web, we provide secure domain registration and
             fast, reliable hosting solutions. Focus on your business while we
             ensure your website performs seamlessly.
           </p>

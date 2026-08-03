@@ -14,7 +14,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 export const metadata: Metadata = {
   title: "Get reliable hosting and web management solutions | Woo Commerce Launchpad",
   description:
-    "At WooCommerce Launchpad, we offer comprehensive hosting and web management solutions that cater to every aspect of your online presence.",
+    "At WooCommerce Web, we offer comprehensive hosting and web management solutions that cater to every aspect of your online presence.",
 };
 
 export default function DomainAndHostingPage() {

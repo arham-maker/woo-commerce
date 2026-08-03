@@ -33,7 +33,7 @@ export function CaseStudy() {
             Fuel Coffee
           </h2>
           <p className="mb-8 max-w-xl text-base leading-relaxed text-black md:mb-10 md:text-lg">
-            Fuel Coffee Company partnered with WooCommerce Launchpad to create a
+            Fuel Coffee Company partnered with WooCommerce Web to create a
             dynamic online store that reflects their brand&apos;s unique identity
             and caters to their growing customer base. Our team developed a
             custom WooCommerce site, featuring intuitive navigation and a secure,

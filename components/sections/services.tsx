@@ -56,7 +56,7 @@ export function Services() {
       <Container>
         <div className="mb-8 grid items-start gap-6 sm:mb-12 sm:gap-8 lg:grid-cols-2 lg:gap-12">
           <FadeIn direction="left" className="space-y-5 sm:space-y-6">
-            <SectionTitle>Tailored Solutions by WooCommerce Launchpad</SectionTitle>
+            <SectionTitle>Tailored Solutions by WooCommerce Web</SectionTitle>
             <div className="flex flex-wrap items-center gap-3 sm:gap-5">
               <GetStartedDialog />
               <LiveChatLink />
@@ -64,7 +64,7 @@ export function Services() {
           </FadeIn>
           <FadeIn direction="right" delay={0.1}>
             <SectionLead>
-              At WooCommerce Launchpad, we provide customized eCommerce solutions
+              At WooCommerce Web, we provide customized eCommerce solutions
               to fit your unique business needs. Our expert team uses the latest
               technology to optimize your WooCommerce setup and help your business
               thrive online.
