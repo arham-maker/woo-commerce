@@ -11,6 +11,7 @@ import {
   formDataToObject,
   submitContactForm,
 } from "@/lib/submit-contact";
+import { toast } from "sonner";
 
 const CONTACT_EMAIL = "info@woocommerceweb.com";
 
@@ -154,8 +155,10 @@ export function ContactUsSection() {
                 setSubmitting(false);
                 if (!result.ok) {
                   setError(result.error);
+                  toast.error(result.error);
                   return;
                 }
+                toast.success("Submitted successfully! We'll contact you soon.");
                 router.push("/thank-you");
               }}
               noValidate

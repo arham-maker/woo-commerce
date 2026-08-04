@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { AppToaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 const outfit = localFont({
@@ -51,7 +52,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        {children}
+        <AppToaster />
+      </body>
     </html>
   );
 }

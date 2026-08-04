@@ -92,7 +92,7 @@ export function Hero() {
             )}
           >
             Whatever your success goals are, WooCommerce Web helps you
-            reach them. Our WordPress-based ecommerce platform supports merchants
+            reach them. Our WordPress-based ecommerce platform supports businesses
             and developers in building and maintaining thriving, enduring
             businesses.
           </p>

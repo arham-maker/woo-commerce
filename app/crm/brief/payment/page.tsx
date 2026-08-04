@@ -1,11 +1,6 @@
-import type { Metadata } from "next";
-import { OrderPaymentView } from "@/components/crm/order-payment-view";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Order Process | WooCommerce Web",
-  description: "Complete your WooCommerce Web order with secure payment.",
-};
-
-export default function CrmBriefPaymentPage() {
-  return <OrderPaymentView />;
+/** Merchant/payment flow removed — redirect old links to thank-you. */
+export default function PaymentPage() {
+  redirect("/thank-you");
 }

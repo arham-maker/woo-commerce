@@ -12,6 +12,7 @@ import {
   formDataToObject,
   submitContactForm,
 } from "@/lib/submit-contact";
+import { toast } from "sonner";
 
 const fieldClass =
   "w-full border-0 border-b border-[#333] bg-transparent pb-[30px] text-xl font-normal leading-[1.2] text-[#333] outline-none placeholder:text-[#333] placeholder:opacity-100 focus:border-brand max-[1399px]:pb-3 max-[1399px]:text-base max-[991px]:pb-[7px] max-[991px]:text-xs";
@@ -49,8 +50,10 @@ export function ContactCta() {
                 setSubmitting(false);
                 if (!result.ok) {
                   setError(result.error);
+                  toast.error(result.error);
                   return;
                 }
+                toast.success("Submitted successfully! We'll contact you soon.");
                 router.push("/thank-you");
               }}
             >

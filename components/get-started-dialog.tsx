@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 import { ArrowRight, X } from "lucide-react";
 import {
   Dialog,
@@ -19,11 +20,7 @@ import {
   DEFAULT_COUNTRY_ABBR,
   type Country,
 } from "@/lib/countries";
-import {
-  DEFAULT_ORDER_PACKAGE,
-  saveOrderPackage,
-  type OrderPackage,
-} from "@/lib/order-package";
+import type { OrderPackage } from "@/lib/order-package";
 import { cn } from "@/lib/utils";
 import {
   formDataToObject,
@@ -166,21 +163,24 @@ export function GetStartedDialog({
                     email: fields.email,
                     phone,
                     countryCode: fields.countrycode,
-                    details: fields.details,
+                    details: [
+                      fields.details,
+                      orderPackage?.name
+                        ? `Package: ${orderPackage.name}`
+                        : null,
+                    ]
+                      .filter(Boolean)
+                      .join(" | "),
                   });
                   setSubmitting(false);
                   if (!result.ok) {
                     setError(result.error);
+                    toast.error(result.error);
                     return;
                   }
-                  saveOrderPackage({
-                    ...DEFAULT_ORDER_PACKAGE,
-                    ...orderPackage,
-                    features:
-                      orderPackage?.features ?? DEFAULT_ORDER_PACKAGE.features,
-                  });
+                  toast.success("Submitted successfully! We'll contact you soon.");
                   setOpen(false);
-                  router.push("/crm/brief/payment");
+                  router.push("/thank-you");
                 }}
               >
                 <div className="pb-[15px] max-[767px]:pb-2.5">

@@ -1,5 +1,5 @@
 import { Container } from "@/components/layout/container";
-import type { LegalSection } from "@/lib/privacy-content";
+import type { LegalSection } from "@/lib/legal-types";
 
 export function LegalContent({ sections }: { sections: LegalSection[] }) {
   return (
@@ -18,8 +18,9 @@ export function LegalContent({ sections }: { sections: LegalSection[] }) {
                       <p
                         key={`${section.title}-p-${index}`}
                         className="mb-8 text-lg leading-[1.7] text-black max-[991px]:text-base max-[991px]:leading-[26px] [&_a]:text-brand [&_a]:underline"
-                        dangerouslySetInnerHTML={{ __html: block.html }}
-                      />
+                      >
+                        {block.content}
+                      </p>
                     );
                   }
 
@@ -28,12 +29,13 @@ export function LegalContent({ sections }: { sections: LegalSection[] }) {
                       key={`${section.title}-ul-${index}`}
                       className="mb-8 list-disc space-y-0 pl-[18px] text-lg leading-[28px] text-[#333] marker:text-[24px] marker:font-medium max-[991px]:text-base max-[991px]:leading-[25px]"
                     >
-                      {block.items.map((item) => (
+                      {block.items.map((item, itemIndex) => (
                         <li
-                          key={item.slice(0, 48)}
+                          key={`${section.title}-li-${index}-${itemIndex}`}
                           className="mb-4 [&_a]:text-brand [&_a]:underline"
-                          dangerouslySetInnerHTML={{ __html: item }}
-                        />
+                        >
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   );
