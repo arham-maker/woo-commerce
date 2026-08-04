@@ -40,8 +40,12 @@ export const metadata: Metadata = {
   description:
     "Whatever your success goals are, WooCommerce Web helps you reach them with custom WooCommerce development, themes, plugins, and more.",
   icons: {
-    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon-mark.png", type: "image/png", sizes: "any" },
+    ],
     shortcut: "/favicon.ico",
+    apple: "/favicon-mark.png",
   },
 };
 
