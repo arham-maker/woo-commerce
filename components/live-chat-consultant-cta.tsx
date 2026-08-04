@@ -2,6 +2,7 @@
 
 import { MessageCircle, Phone } from "lucide-react";
 import { SITE } from "@/lib/constants";
+import { openLiveChat } from "@/lib/zendesk";
 import { cn } from "@/lib/utils";
 
 type LiveChatConsultantCtaProps = {
@@ -26,8 +27,11 @@ export function LiveChatConsultantCta({
     >
       <button
         type="button"
+        onClick={() => {
+          void openLiveChat();
+        }}
         className={cn(
-          "inline-flex items-center whitespace-nowrap rounded-full bg-brand font-bold leading-none text-white transition-colors hover:bg-[#6C6CFF]",
+          "open-livechat inline-flex items-center whitespace-nowrap rounded-full bg-brand font-bold leading-none text-white transition-colors hover:bg-[#6C6CFF]",
           compact
             ? "gap-[7px] px-5 py-3 text-sm xl:gap-2.5 xl:px-[45px] xl:pt-5 xl:pb-[18px] xl:text-lg"
             : "gap-2.5 px-[45px] pt-5 pb-[18px] text-lg",

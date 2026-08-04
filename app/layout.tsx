@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import { AppToaster } from "@/components/ui/toaster";
+import { ZendeskWidget } from "@/components/zendesk-widget";
+import { ZENDESK_SNIPPET_SRC } from "@/lib/zendesk";
 import "./globals.css";
 
 const outfit = localFont({
@@ -59,6 +62,20 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <AppToaster />
+        <Script id="ze-settings" strategy="beforeInteractive">{`
+          window.zESettings = {
+            webWidget: {
+              zIndex: 999999,
+              offset: { horizontal: "20px", vertical: "20px" }
+            }
+          };
+        `}</Script>
+        <Script
+          id="ze-snippet"
+          src={ZENDESK_SNIPPET_SRC}
+          strategy="afterInteractive"
+        />
+        <ZendeskWidget />
       </body>
     </html>
   );

@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { ASSETS, NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { openLiveChat } from "@/lib/zendesk";
 import {
   Sheet,
   SheetContent,
@@ -291,8 +292,11 @@ export function LiveChatLink({
   return (
     <button
       type="button"
+      onClick={() => {
+        void openLiveChat();
+      }}
       className={cn(
-        "inline-flex items-center gap-1.5 text-left transition-opacity hover:opacity-80 sm:gap-2",
+        "open-livechat inline-flex items-center gap-1.5 text-left transition-opacity hover:opacity-80 sm:gap-2",
         dark ? "text-white" : "text-brand",
         className,
       )}

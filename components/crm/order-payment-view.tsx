@@ -13,6 +13,7 @@ import {
 } from "@/lib/order-package";
 // import { SecurePaymentModal } from "@/components/crm/secure-payment-modal";
 import { cn } from "@/lib/utils";
+import { openLiveChat } from "@/lib/zendesk";
 
 const STEPS = [
   { num: "01", label: "Sign up" },
@@ -53,7 +54,10 @@ export function OrderPaymentView() {
           <div className="flex items-center gap-3 sm:gap-5">
             <button
               type="button"
-              className="hidden items-center gap-2 text-left sm:inline-flex"
+              onClick={() => {
+                void openLiveChat();
+              }}
+              className="open-livechat hidden items-center gap-2 text-left sm:inline-flex"
             >
               <MessageCircle className="size-5 text-[#333]" />
               <span className="flex flex-col leading-tight">

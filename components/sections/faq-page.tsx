@@ -3,6 +3,7 @@
 import { Plus } from "lucide-react";
 import { SITE } from "@/lib/constants";
 import { FAQS } from "@/lib/faqs";
+import { openLiveChat } from "@/lib/zendesk";
 import { FadeIn } from "@/components/motion/fade-in";
 import { Container } from "@/components/layout/container";
 import {
@@ -37,7 +38,10 @@ export function FaqPageSection() {
               or{" "}
               <button
                 type="button"
-                className="font-medium text-brand hover:underline"
+                onClick={() => {
+                  void openLiveChat();
+                }}
+                className="open-livechat font-medium text-brand hover:underline"
               >
                 LIVE CHAT
               </button>{" "}

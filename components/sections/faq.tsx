@@ -2,6 +2,7 @@
 
 import { SITE } from "@/lib/constants";
 import { FAQS } from "@/lib/faqs";
+import { openLiveChat } from "@/lib/zendesk";
 import { FadeIn } from "@/components/motion/fade-in";
 import {
   Accordion,
@@ -41,7 +42,10 @@ export function Faq({
               or{" "}
               <button
                 type="button"
-                className="font-medium text-brand hover:underline"
+                onClick={() => {
+                  void openLiveChat();
+                }}
+                className="open-livechat font-medium text-brand hover:underline"
               >
                 LIVE CHAT
               </button>{" "}

@@ -5,6 +5,7 @@ import { Check, Star, MessageSquare } from "lucide-react";
 import { ASSETS } from "@/lib/constants";
 import { FadeIn, useMotionReady } from "@/components/motion/fade-in";
 import { GetStartedDialog } from "@/components/get-started-dialog";
+import { openLiveChat } from "@/lib/zendesk";
 import { cn } from "@/lib/utils";
 
 const bullets = [
@@ -78,7 +79,10 @@ export function LpHero() {
             />
             <button
               type="button"
-              className="inline-flex items-center gap-2 text-xl font-bold text-white transition-opacity hover:opacity-80 sm:text-2xl"
+              onClick={() => {
+                void openLiveChat();
+              }}
+              className="open-livechat inline-flex items-center gap-2 text-xl font-bold text-white transition-opacity hover:opacity-80 sm:text-2xl"
             >
               <MessageSquare className="size-5 fill-none text-brand" strokeWidth={2} />
               Live chat

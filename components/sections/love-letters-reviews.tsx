@@ -2,6 +2,7 @@
 
 import { Star } from "lucide-react";
 import { SITE } from "@/lib/constants";
+import { openLiveChat } from "@/lib/zendesk";
 import { FadeIn, Stagger, StaggerItem } from "@/components/motion/fade-in";
 import { Container } from "@/components/layout/container";
 
@@ -34,7 +35,10 @@ export function LoveLettersReviews() {
               or{" "}
               <button
                 type="button"
-                className="text-brand transition-colors hover:underline"
+                onClick={() => {
+                  void openLiveChat();
+                }}
+                className="open-livechat text-brand transition-colors hover:underline"
               >
                 LIVE CHAT
               </button>{" "}
