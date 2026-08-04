@@ -329,7 +329,7 @@ export const ASSETS = {
   contactMap: "/images/assets/images/map.png",
   lp: {
     logo: "/WooCom-Web-transparent.png",
-    footerLogo: "/woo-mark.png",
+    footerLogo: "/WooCom-Web-transparent.png",
     hero: "/images/lp1/assets/images/banner/lp-img.png",
     clients: "/images/lp1/assets/images/top-sec/1.png",
     certified: "/images/lp1/assets/images/sec5/img.png",

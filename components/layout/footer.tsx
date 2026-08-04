@@ -63,13 +63,13 @@ function FooterMenu({
   );
 }
 
-function WooMark({ className }: { className?: string }) {
+function SiteLogo({ className }: { className?: string }) {
   return (
     <Image
-      src={ASSETS.wooMark}
-      alt="WOO"
-      width={161}
-      height={96}
+      src={ASSETS.logo}
+      alt="WooCommerce Web"
+      width={280}
+      height={52}
       className={className}
     />
   );
@@ -85,7 +85,7 @@ export function Footer() {
               {/* Left — live: col-md-3 / col-xl-5 */}
               <div className="md:w-1/4 xl:w-5/12">
                 <div className="pb-[15px]">
-                  <WooMark className="h-auto w-[70px] lg:w-[120px] xl:w-[161px]" />
+                  <SiteLogo className="h-auto w-[140px] lg:w-[200px] xl:w-[240px]" />
                 </div>
                 <h6 className="text-xl font-bold leading-normal text-white xl:text-[26px] min-[1400px]:text-[30px]">
                   Let&apos;s develop <br className="hidden sm:block" />

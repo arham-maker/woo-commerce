@@ -105,26 +105,13 @@ function buildAdminHtml(payload: ContactPayload): string {
   `;
 }
 
-function buildUserHtml(payload: ContactPayload, fromName: string): string {
-  const firstName = payload.name?.trim().split(/\s+/)[0] || "there";
-  return `
-    <div style="font-family:Arial,sans-serif;color:#222;line-height:1.5;">
-      <h2 style="margin:0 0 12px;">Thanks for contacting us!</h2>
-      <p style="margin:0 0 12px;">Hi ${escapeHtml(firstName)},</p>
-      <p style="margin:0 0 12px;">
-        We received your message and our team will get back to you shortly.
-      </p>
-      <p style="margin:0;">— ${escapeHtml(fromName)}</p>
-    </div>
-  `;
-}
-
 export async function sendContactEmails(payload: ContactPayload) {
   const config = getMailConfig();
   const transporter = createMailTransporter();
   const from = `"${config.fromName}" <${config.fromAddress}>`;
   const subjectPrefix = `[${formLabel(payload.type)}]`;
 
+  // Admin only — no user confirmation email (saves SMTP quota)
   await transporter.sendMail({
     from,
     to: config.adminAddress,
@@ -132,16 +119,4 @@ export async function sendContactEmails(payload: ContactPayload) {
     subject: `${subjectPrefix} New lead from ${payload.name || payload.email}`,
     html: buildAdminHtml(payload),
   });
-
-  try {
-    await transporter.sendMail({
-      from,
-      to: payload.email,
-      subject: `We received your message — ${config.fromName}`,
-      html: buildUserHtml(payload, config.fromName),
-    });
-  } catch (error) {
-    // Admin notification is the source of truth; auto-reply failures should not fail the form.
-    console.error("[mail] user confirmation failed", error);
-  }
 }

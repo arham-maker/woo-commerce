@@ -12,10 +12,10 @@ export function LpFooter() {
             <Link href="/lp" className="shrink-0">
               <Image
                 src={ASSETS.lp.footerLogo}
-                alt="WOO"
-                width={161}
-                height={96}
-                className="h-12 w-auto md:h-16"
+                alt="WooCommerce Web"
+                width={280}
+                height={52}
+                className="h-10 w-auto md:h-12"
               />
             </Link>
             <Image
