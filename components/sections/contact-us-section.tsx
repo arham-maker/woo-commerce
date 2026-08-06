@@ -13,7 +13,7 @@ import {
 } from "@/lib/submit-contact";
 import { toast } from "sonner";
 
-const CONTACT_EMAIL = "info@woocommerceweb.com";
+const CONTACT_EMAIL = "support@woocommerceweb.com";
 
 const requestTypeOptions = [
   {

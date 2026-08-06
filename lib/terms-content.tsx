@@ -97,7 +97,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
           <>
             Sending us an{" "}
             <a
-              href="mailto:info@woocommerceweb.com"
+              href="mailto:support@woocommerceweb.com"
               className="text-brand underline hover:opacity-80"
             >
               Email

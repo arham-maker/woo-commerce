@@ -2,8 +2,8 @@ export const SITE = {
   name: "WooCommerce Web",
   phone: "+1 (682) 267-0492",
   phoneHref: "tel:+1 (682) 267-0492",
-  email: "info@woocommerceweb.com",
-  emailHref: "mailto:info@woocommerceweb.com",
+  email: "support@woocommerceweb.com",
+  emailHref: "mailto:support@woocommerceweb.com",
 } as const;
 
 export const ASSETS = {

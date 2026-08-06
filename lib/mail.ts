@@ -37,7 +37,7 @@ export function getMailConfig() {
     adminAddress:
       process.env.SMTP_ADMIN_EMAIL?.trim() ||
       process.env.FORM_RECIPIENT_EMAIL?.trim() ||
-      "info@woocommerceweb.com",
+      "support@woocommerceweb.com",
   };
 }
 
