@@ -23,7 +23,7 @@ export function ServicePackageCta({
       <Container>
         <FadeIn>
           <div className="relative overflow-hidden rounded-[10px] bg-[rgba(217,217,217,0.5)] p-[25px] transition-[box-shadow] duration-300 hover:shadow-[0_0_20px_1px_rgba(0,0,0,0.1)] xl:rounded-[15px] xl:p-[50px]">
-            <div className="relative z-[1] w-[45%]">
+            <div className="relative z-[1] w-full lg:w-[55%] xl:w-[45%]">
               <h2 className="mb-[15px] text-[22px] font-bold leading-none text-[#333] xl:mb-[30px] xl:text-[30px]">
                 {title}
               </h2>

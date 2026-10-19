@@ -8,19 +8,19 @@ import { ASSETS, SITE } from "@/lib/constants";
 export function LpHeader() {
   return (
     <header className="relative z-40 w-full bg-white">
-      <div className="mx-auto flex max-w-[1320px] items-center justify-between gap-4 px-4 py-[18px] sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-4 px-4 py-[18px] sm:flex-row sm:px-6 lg:px-8">
         <Link href="/lp" className="shrink-0">
           <Image
             src={ASSETS.lp.logo}
             alt="WooCommerce Web"
             width={440}
             height={94}
-            className="h-14 w-auto sm:h-16 md:h-[88px]"
+            className="h-auto w-[220px] max-w-full sm:w-[260px] md:w-[330px] lg:w-[412px]"
             priority
           />
         </Link>
 
-        <ul className="flex flex-wrap items-center justify-end gap-4 sm:gap-8">
+        <ul className="flex min-w-0 flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-end sm:gap-x-8">
           <li>
             <a
               href={SITE.phoneHref}

@@ -65,7 +65,7 @@ export function ServicePageHero({
             <p
               className={cn(
                 "text-base font-bold leading-none text-black transition-transform duration-700 md:text-xl",
-                ready ? "translate-x-0" : "-translate-x-8",
+                ready ? "translate-x-0" : "sm:-translate-x-8",
               )}
             >
               {subtitle}
@@ -75,7 +75,7 @@ export function ServicePageHero({
           <h1
             className={cn(
               "max-w-xl pb-4 text-[32px] font-medium leading-[1.15] tracking-tight text-black transition-transform delay-75 duration-700 sm:text-[44px] lg:pb-[35px] lg:text-[60px]",
-              ready ? "translate-x-0" : "-translate-x-8",
+              ready ? "translate-x-0" : "sm:-translate-x-8",
               titleClassName,
             )}
           >
@@ -89,7 +89,7 @@ export function ServicePageHero({
           <p
             className={cn(
               "max-w-lg pb-2.5 text-base leading-relaxed text-[#333] transition-transform delay-150 duration-700 md:pb-[45px] md:text-xl",
-              ready ? "translate-x-0" : "-translate-x-6",
+              ready ? "translate-x-0" : "sm:-translate-x-6",
             )}
           >
             {description}

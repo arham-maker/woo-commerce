@@ -110,7 +110,7 @@ function PortfolioCard({ src, index }: { src: string; index: number }) {
   return (
     <div
       className={cn(
-        "relative w-[min(468px,33.33vw)] shrink-0 overflow-hidden bg-white",
+        "relative w-[82vw] shrink-0 snap-center overflow-hidden bg-white sm:w-[min(468px,45vw)] lg:w-[min(468px,33.33vw)]",
         "shadow-[0_7px_21px_rgba(0,0,0,0.1)] transition-shadow duration-300",
         "hover:shadow-[0_14px_42px_rgba(0,0,0,0.2)]",
       )}
@@ -122,18 +122,23 @@ function PortfolioCard({ src, index }: { src: string; index: number }) {
       onMouseOut={() => {
         videoRef.current?.pause();
       }}
+      onFocus={() => { void videoRef.current?.play().catch(() => {}); }}
+      onBlur={() => videoRef.current?.pause()}
     >
       <video
         ref={videoRef}
         muted
         playsInline
         loop
-        preload="metadata"
+        controls
+        poster={src.replace(".webm", ".webp")}
+        preload="none"
+        width={1600}
+        height={1200}
         className="block h-auto w-full"
         aria-label={`WooCommerce project ${index + 1}`}
       >
         <source src={src} type="video/webm" />
-        <source src={src.replace(".webm", ".mp4")} type="video/mp4" />
       </video>
     </div>
   );
@@ -151,7 +156,10 @@ function PortfolioRow({
   return (
     <div
       ref={scrollRef}
-      className="overflow-x-auto overflow-y-hidden scrollbar-none [&::-webkit-scrollbar]:hidden"
+      role="region"
+      aria-label={`WooCommerce projects row ${rowIndex + 1}; swipe to browse`}
+      tabIndex={0}
+      className="relative w-full min-w-0 snap-x snap-mandatory overflow-x-auto overflow-y-hidden overscroll-x-contain scrollbar-none [&::-webkit-scrollbar]:hidden"
     >
       <div className="flex w-max gap-3 px-3 pb-1 pt-2 md:gap-4 md:px-4">
         {items.map((src, i) => (

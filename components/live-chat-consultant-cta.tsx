@@ -31,10 +31,10 @@ export function LiveChatConsultantCta({
           void openLiveChat();
         }}
         className={cn(
-          "open-livechat inline-flex items-center whitespace-nowrap rounded-full bg-brand font-bold leading-none text-white transition-colors hover:bg-[#6C6CFF]",
+          "open-livechat inline-flex max-w-full items-center justify-center rounded-full bg-brand text-center font-bold leading-snug text-white transition-colors hover:bg-[#6C6CFF]",
           compact
             ? "gap-[7px] px-5 py-3 text-sm xl:gap-2.5 xl:px-[45px] xl:pt-5 xl:pb-[18px] xl:text-lg"
-            : "gap-2.5 px-[45px] pt-5 pb-[18px] text-lg",
+            : "gap-2.5 px-5 py-4 text-base sm:px-[45px] sm:pt-5 sm:pb-[18px] sm:text-lg",
         )}
       >
         <MessageCircle

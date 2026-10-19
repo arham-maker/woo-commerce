@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { MessageCircle } from "lucide-react";
 import {
   keepLauncherVisible,
   openLiveChat,
@@ -49,7 +50,7 @@ function setupWidgetListeners() {
 
   window.zE("webWidget:on", "chat:unreadMessages", (count: unknown) => {
     const unread = typeof count === "number" ? count : Number(count);
-    if (unread > 0) {
+    if (unread > 0 && window.matchMedia("(min-width: 768px)").matches) {
       void openLiveChat();
     }
   });
@@ -69,6 +70,11 @@ export function ZendeskWidget() {
       .then((zE) => {
         if (cancelled) return;
 
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          zE("webWidget", "close");
+          zE("webWidget", "hide");
+        }
+
         if (!listenersReady.current) {
           setupWidgetListeners();
           listenersReady.current = true;
@@ -77,7 +83,7 @@ export function ZendeskWidget() {
         if (!autoOpenStarted.current) {
           autoOpenStarted.current = true;
           autoOpenTimer = window.setTimeout(() => {
-            if (cancelled) return;
+            if (cancelled || !window.matchMedia("(min-width: 768px)").matches) return;
             zE("webWidget", "show");
             zE("webWidget", "open");
           }, 2000);
@@ -144,5 +150,13 @@ export function ZendeskWidget() {
     return () => document.removeEventListener("click", onClick);
   }, [pathname]);
 
-  return null;
+  return (
+    <button
+      type="button"
+      aria-label="Open live chat"
+      className="open-livechat fixed right-4 bottom-4 z-40 flex size-12 items-center justify-center rounded-full bg-brand text-white shadow-lg transition-colors hover:bg-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:hidden"
+    >
+      <MessageCircle className="size-6" aria-hidden />
+    </button>
+  );
 }

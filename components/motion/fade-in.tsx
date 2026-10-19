@@ -47,8 +47,8 @@ type FadeInProps = {
 const hiddenTransforms = {
   up: "translate-y-8",
   down: "-translate-y-8",
-  left: "translate-x-4",
-  right: "-translate-x-4",
+  left: "sm:translate-x-4",
+  right: "sm:-translate-x-4",
   none: "",
 };
 
@@ -64,7 +64,7 @@ export function FadeIn({
     <div
       ref={ref}
       className={cn(
-        "transition-transform duration-700 ease-out will-change-transform",
+        "min-w-0 transition-transform duration-700 ease-out motion-reduce:transform-none motion-reduce:transition-none",
         inView ? "translate-x-0 translate-y-0" : hiddenTransforms[direction],
         className,
       )}

@@ -77,7 +77,7 @@ export function Hero() {
           <h1
             className={cn(
               "max-w-xl text-2xl font-medium leading-[1.15] tracking-tight text-black transition-transform duration-700 sm:text-[40px] md:text-[48px]",
-              ready ? "translate-x-0" : "-translate-x-8",
+              ready ? "translate-x-0" : "sm:-translate-x-8",
             )}
           >
             Achieve{" "}
@@ -88,7 +88,7 @@ export function Hero() {
           <p
             className={cn(
               "max-w-lg text-sm leading-relaxed text-muted transition-transform delay-150 duration-700 sm:text-base md:text-lg",
-              ready ? "translate-x-0" : "-translate-x-6",
+              ready ? "translate-x-0" : "sm:-translate-x-6",
             )}
           >
             Whatever your success goals are, WooCommerce Web helps you
@@ -124,7 +124,7 @@ export function Hero() {
         <div
           className={cn(
             "relative mt-2 transition-transform delay-200 duration-1000 sm:mt-0",
-            ready ? "translate-x-0" : "translate-x-4",
+            ready ? "translate-x-0" : "sm:translate-x-4",
           )}
         >
           <div

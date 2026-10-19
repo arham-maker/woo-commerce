@@ -42,6 +42,19 @@ body {
   overflow-x: clip;
 }
 
+/* Let flex/grid descendants fit narrow viewports and wrap long service names. */
+main {
+  min-width: 0;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  input, select, textarea {
+    font-size: max(1rem, 1em);
+  }
+}
+
 ::selection {
   background: color-mix(in srgb, var(--brand) 30%, white);
   color: var(--foreground);

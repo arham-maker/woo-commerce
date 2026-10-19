@@ -53,6 +53,11 @@ export async function openLiveChat() {
 
 export function keepLauncherVisible() {
   if (typeof window.zE !== "function") return;
+  // Mobile uses the compact launcher rendered by ZendeskWidget.
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    window.zE("webWidget", "hide");
+    return;
+  }
   window.zE("webWidget", "show");
   window.setTimeout(() => {
     if (typeof window.zE === "function") {

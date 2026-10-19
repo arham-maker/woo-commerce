@@ -30,7 +30,7 @@ export function LpHero() {
           <h1
             className={cn(
               "max-w-xl text-[28px] font-semibold leading-[1] tracking-tight text-white transition-transform duration-700 sm:text-[32px] lg:text-[34px]",
-              ready ? "translate-x-0" : "-translate-x-8",
+              ready ? "translate-x-0" : "sm:-translate-x-8",
             )}
           >
             Supercharge Your E-Commerce Success with Expert WooCommerce Solutions
@@ -39,7 +39,7 @@ export function LpHero() {
           <p
             className={cn(
               "max-w-lg text-base leading-relaxed text-white transition-transform delay-75 duration-700",
-              ready ? "translate-x-0" : "-translate-x-6",
+              ready ? "translate-x-0" : "sm:-translate-x-6",
             )}
           >
             At WooCommerce Web, we transform your online store into a sales
@@ -50,7 +50,7 @@ export function LpHero() {
           <ul
             className={cn(
               "space-y-2.5 transition-transform delay-150 duration-700",
-              ready ? "translate-x-0" : "-translate-x-6",
+              ready ? "translate-x-0" : "sm:-translate-x-6",
             )}
           >
             {bullets.map((item) => (
