@@ -41,7 +41,7 @@ function FooterMenu({
 }) {
   return (
     <div className={className}>
-      <h6 className="pb-3 text-sm font-bold leading-normal text-white lg:pb-[15px] lg:text-lg xl:text-xl min-[1400px]:pb-[18px] min-[1400px]:text-2xl">
+      <h6 className="pb-3 text-xl font-bold leading-normal text-white md:text-sm lg:pb-[15px] lg:text-lg xl:text-xl min-[1400px]:pb-[18px] min-[1400px]:text-2xl">
         {title}
       </h6>
       <ul className="flex flex-col gap-2.5 min-[1400px]:gap-[15px]">
@@ -49,10 +49,10 @@ function FooterMenu({
           <li key={link.label}>
             <Link
               href={link.href}
-              className="group flex items-start gap-2.5 text-[10px] font-normal leading-[1.2] text-white transition-colors hover:text-brand lg:text-sm lg:leading-[1.2] min-[1400px]:items-center min-[1400px]:gap-[15px] min-[1400px]:text-base min-[1400px]:leading-normal"
+              className="group flex items-start gap-2.5 text-base font-normal leading-relaxed text-white transition-colors hover:text-brand md:text-[10px] lg:text-sm lg:leading-[1.2] min-[1400px]:items-center min-[1400px]:gap-[15px] min-[1400px]:text-base min-[1400px]:leading-normal"
             >
-              <span className="mt-0.5 text-[10px] text-brand min-[1400px]:mt-0 min-[1400px]:text-xs">
-                <ArrowRight className="size-2.5 lg:size-3" strokeWidth={3} />
+              <span className="mt-1 shrink-0 text-brand md:mt-0.5 min-[1400px]:mt-0">
+                <ArrowRight className="size-3 md:size-2.5 lg:size-3" strokeWidth={3} />
               </span>
               {link.label}
             </Link>
@@ -78,7 +78,7 @@ function SiteLogo({ className }: { className?: string }) {
 export function Footer() {
   return (
     <>
-      <footer className="bg-black py-10 lg:pt-[70px] lg:pb-[30px] xl:pt-[86px] xl:pb-10">
+      <footer className="bg-black py-10 text-left lg:pt-[70px] lg:pb-[30px] xl:pt-[86px] xl:pb-10">
         <Container>
           <div className="pb-[30px] md:pb-10 xl:pb-20">
             <div className="flex flex-col md:flex-row md:gap-4 xl:gap-8">
@@ -93,27 +93,27 @@ export function Footer() {
                 </h6>
 
                 <div className="flex flex-col gap-[7px] pt-[15px] pb-5 md:pb-0 lg:gap-2.5 lg:pt-[25px] xl:gap-[15px] xl:pt-[38px]">
-                  <p className="text-sm font-bold text-white min-[1400px]:text-base">
+                  <p className="text-base font-bold text-white md:text-sm min-[1400px]:text-base">
                     Company
                   </p>
                   <div className="flex flex-col items-start gap-1.5 lg:flex-row lg:flex-wrap lg:items-center lg:gap-[15px]">
-                    <p className="w-auto text-sm font-bold text-white lg:w-[60px] min-[1400px]:text-base">
+                    <p className="w-auto text-base font-bold text-white md:text-sm lg:w-[60px] min-[1400px]:text-base">
                       USA
                     </p>
                     <a
                       href={SITE.phoneHref}
-                      className="text-sm font-light text-white transition-colors hover:text-brand min-[1400px]:text-base"
+                      className="text-base font-light text-white transition-colors hover:text-brand md:text-sm min-[1400px]:text-base"
                     >
                       {SITE.phone}
                     </a>
                   </div>
                   <div className="flex flex-col items-start gap-1.5 lg:flex-row lg:flex-wrap lg:items-center lg:gap-[15px]">
-                    <p className="w-auto text-sm font-bold text-white lg:w-[60px] min-[1400px]:text-base">
+                    <p className="w-auto text-base font-bold text-white md:text-sm lg:w-[60px] min-[1400px]:text-base">
                       Email
                     </p>
                     <a
                       href={SITE.emailHref}
-                      className="text-sm font-light text-white transition-colors hover:text-brand min-[1400px]:text-base"
+                      className="break-all text-base font-light text-white transition-colors hover:text-brand md:text-sm min-[1400px]:text-base"
                     >
                       {SITE.email}
                     </a>
@@ -122,16 +122,16 @@ export function Footer() {
               </div>
 
               {/* Right menus — live: flex wrap; md+ 25/25/45; xl+ equal gap-50 */}
-              <div className="flex flex-wrap gap-5 md:w-3/4 md:flex-nowrap md:gap-[15px] xl:w-7/12 xl:gap-[50px]">
+              <div className="flex flex-col gap-7 md:w-3/4 md:flex-row md:gap-[15px] xl:w-7/12 xl:gap-[50px]">
                 <FooterMenu
                   title="Company"
                   links={companyLinks}
-                  className="min-w-0 flex-1 basis-[calc(50%-10px)] md:flex-none md:basis-1/4 md:max-w-[25%] xl:max-w-none xl:flex-1 xl:basis-0"
+                  className="min-w-0 w-full md:w-auto md:flex-none md:basis-1/4 md:max-w-[25%] xl:max-w-none xl:flex-1 xl:basis-0"
                 />
                 <FooterMenu
                   title="Services"
                   links={serviceLinks}
-                  className="min-w-0 flex-1 basis-[calc(50%-10px)] md:flex-none md:basis-1/4 md:max-w-[25%] xl:max-w-none xl:flex-1 xl:basis-0"
+                  className="min-w-0 w-full md:w-auto md:flex-none md:basis-1/4 md:max-w-[25%] xl:max-w-none xl:flex-1 xl:basis-0"
                 />
                 <FooterMenu
                   title="Solutions"
@@ -144,7 +144,7 @@ export function Footer() {
 
           <ul
             className={cn(
-              "flex flex-wrap items-center justify-center gap-2.5",
+              "flex flex-wrap items-center justify-start gap-2.5 md:justify-center",
               "md:gap-6 md:px-[5%] lg:gap-11 lg:px-[15%] xl:px-0",
             )}
           >
@@ -165,8 +165,8 @@ export function Footer() {
 
       <div className="bg-[#2A282C]">
         <Container>
-          <div className="flex flex-col items-center justify-between gap-2.5 py-2.5 md:flex-row md:gap-4 md:py-5">
-            <p className="text-center text-[10px] leading-[1.4] text-white md:text-left lg:text-sm lg:leading-[1.42]">
+          <div className="flex flex-col items-start justify-between gap-2.5 py-2.5 md:flex-row md:items-center md:gap-4 md:py-5">
+            <p className="text-left text-sm leading-relaxed text-white md:text-[10px] lg:text-sm lg:leading-[1.42]">
               Copyright © 2024 WooCommerce Web.{" "}
               <Link
                 href="/terms"
@@ -193,8 +193,8 @@ export function Footer() {
           </div>
 
           <div className="pb-6 pt-2">
-            <p className="mx-auto max-w-5xl text-center text-xs leading-relaxed text-white">
-              <span className="text-sm font-bold text-[#999]">Disclaimer</span>
+            <p className="max-w-5xl text-left text-sm leading-relaxed text-white md:text-xs">
+              <span className="text-base font-bold text-[#999] md:text-sm">Disclaimer</span>
               <br />
               WooCommerce Web is an independent company that provides
               design and development services for e-commerce solutions. We are

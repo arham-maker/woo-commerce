@@ -8,7 +8,7 @@ export function LpFooter() {
     <>
       <footer className="bg-black pt-[50px] pb-[30px]">
         <Container>
-          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <Link href="/lp" className="shrink-0">
               <Image
                 src={ASSETS.lp.footerLogo}
@@ -31,9 +31,9 @@ export function LpFooter() {
 
       <div className="bg-black pb-6">
         <Container>
-          <div className="flex flex-col gap-3 border-t border-white/10 pt-5 text-sm text-white/80 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-3 border-t border-white/10 pt-5 text-left text-base text-white/80 md:flex-row md:items-center md:justify-between md:text-sm">
             <p>© WooCommerce Web 2024. All rights reserved.</p>
-            <p className="md:text-right">
+            <p>
               <Link href="/lp/terms" className="hover:text-white">
                 TERMS & CONDITIONS
               </Link>
@@ -43,8 +43,8 @@ export function LpFooter() {
               </Link>
             </p>
           </div>
-          <p className="mt-6 text-center text-xs leading-relaxed text-white/60 md:text-[12px]">
-            <span className="text-sm text-white/80">Disclaimer</span>
+          <p className="mt-6 text-left text-sm leading-relaxed text-white/60 md:text-[12px]">
+            <span className="text-base text-white/80 md:text-sm">Disclaimer</span>
             <br />
             WooCommerce Web is an independent company that provides design
             and development services for e-commerce solutions. We are not
