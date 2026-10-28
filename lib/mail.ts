@@ -34,10 +34,8 @@ export function getMailConfig() {
     pass,
     fromAddress: requiredEnv("SMTP_FROM_EMAIL"),
     fromName: process.env.SMTP_FROM_NAME?.trim() || "WooCommerce Web",
-    adminAddress:
-      process.env.SMTP_ADMIN_EMAIL?.trim() ||
-      process.env.FORM_RECIPIENT_EMAIL?.trim() ||
-      "support@woocommerceweb.com",
+    // All contact forms (contact-cta, contact-us, get-started) go here
+    adminAddress: "john@woocommerceweb.com",
   };
 }
 

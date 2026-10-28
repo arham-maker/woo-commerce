@@ -217,7 +217,6 @@ export function GetStartedDialog({
 
                 <div className="pb-[15px] max-[767px]:pb-2.5">
                   <textarea
-                    required
                     name="details"
                     placeholder="Business Industry"
                     rows={3}
