@@ -77,19 +77,22 @@ export function GetStartedDialog({
         overlayClassName="bg-[rgba(8,32,50,0.55)] backdrop-blur-[8px]"
         className={cn(
           "gap-0 border-0 bg-transparent p-0 shadow-none",
-          "w-[1050px] max-w-[90%] max-h-[97vh] overflow-y-auto rounded-[25px]",
+          "w-[1050px] max-w-[min(90%,calc(100%-1.5rem))]",
+          // Top-anchor (not translateY center) so tall dialogs can scroll on short viewports
+          "top-3 translate-y-0",
+          "max-h-[calc(100dvh-1.5rem)] overflow-y-auto overscroll-contain rounded-[25px]",
           "max-[767px]:rounded-[10px]",
         )}
       >
-        <div className="flex w-full items-stretch overflow-hidden rounded-[25px] max-[767px]:rounded-[10px]">
+        <div className="flex w-full items-stretch rounded-[25px] max-[767px]:rounded-[10px]">
           {/* .popupImage — hidden ≤767 */}
-          <div className="relative hidden w-1/2 shrink-0 md:block">
+          <div className="relative hidden w-1/2 shrink-0 self-stretch md:block">
             <Image
               src={ASSETS.getStartedPopup}
               alt=""
               width={534}
               height={785}
-              className="h-full min-h-full w-full rounded-l-[30px] object-cover"
+              className="absolute inset-0 h-full w-full rounded-l-[30px] object-cover"
               sizes="525px"
               priority
             />
@@ -120,14 +123,14 @@ export function GetStartedDialog({
               className={cn(
                 "bg-[#F7F7F7] pt-[55px] text-left",
                 "max-[1399px]:pt-10",
-                "max-[767px]:rounded-[10px] max-[767px]:pt-[30px] max-[767px]:text-center",
+                "max-[767px]:rounded-[10px] max-[767px]:pt-6 max-[767px]:text-center",
               )}
             >
               <DialogTitle
                 className={cn(
                   "m-0 px-7 pb-[15px] text-[50px] font-semibold leading-none tracking-[-1px] text-[#333]",
                   "max-[1399px]:text-[42px]",
-                  "max-[767px]:px-[25px] max-[767px]:py-[5px] max-[767px]:pb-[5px] max-[767px]:text-[24px]",
+                  "max-[767px]:px-4 max-[767px]:py-1 max-[767px]:pb-1 max-[767px]:text-[22px] max-[767px]:leading-tight",
                 )}
               >
                 Build a Successful WooCommerce Store
@@ -137,7 +140,7 @@ export function GetStartedDialog({
                 className={cn(
                   "m-0 px-[30px] pb-6 text-2xl font-normal leading-normal text-black",
                   "max-[1399px]:text-xl",
-                  "max-[767px]:px-[35px] max-[767px]:pb-[10px] max-[767px]:text-sm max-[767px]:leading-normal",
+                  "max-[767px]:px-4 max-[767px]:pb-2 max-[767px]:text-sm max-[767px]:leading-normal",
                 )}
               >
                 Get an Exclusive Discounts with our package!
@@ -147,7 +150,7 @@ export function GetStartedDialog({
                 className={cn(
                   "px-[35px] py-[50px]",
                   "max-[1399px]:px-[25px] max-[1399px]:py-[30px]",
-                  "max-[767px]:p-[15px]",
+                  "max-[767px]:px-3 max-[767px]:pb-4 max-[767px]:pt-2",
                 )}
                 onSubmit={async (e) => {
                   e.preventDefault();
@@ -218,7 +221,10 @@ export function GetStartedDialog({
                     name="details"
                     placeholder="Business Industry"
                     rows={3}
-                    className={cn(fieldClass, "h-[100px] resize-none")}
+                    className={cn(
+                      fieldClass,
+                      "h-[100px] resize-none max-[767px]:h-[72px]",
+                    )}
                   />
                 </div>
 
